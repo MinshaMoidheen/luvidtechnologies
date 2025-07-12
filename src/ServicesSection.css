@@ -1,0 +1,124 @@
+.services-root {
+  background: #111;
+  color: #fff;
+  padding: 48px 0 48px 0;
+  text-align: center;
+}
+
+.services-badge {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 8px 28px;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.services-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0 0 48px 0;
+  line-height: 1.13;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #232323;
+  border-radius: 16px;
+  padding: 24px 20px 20px 20px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.service-icon-circle {
+  background: #fff;
+  color: #111;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  position: absolute;
+  top: -24px;
+  left: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.service-card-title {
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: #fff;
+  text-align: left;
+}
+
+.service-card-desc {
+  font-size: 0.98rem;
+  color: #e0e0e0;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.service-more {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  transition: color 0.2s;
+}
+.service-more:hover {
+  color: #f2c744;
+}
+.service-arrow {
+  font-size: 1.2em;
+}
+
+@media (max-width: 1100px) {
+  .services-cards {
+    gap: 18px;
+  }
+  .service-card {
+    width: 90vw;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-title {
+    font-size: 1.5rem;
+  }
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .service-card {
+    width: 98vw;
+    max-width: 98vw;
+    padding: 24px 8px 20px 8px;
+  }
+  .service-icon-circle {
+    left: 8px;
+  }
+} 

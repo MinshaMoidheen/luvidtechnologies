@@ -1,0 +1,153 @@
+.about-hero{
+  display: block;
+  height: 300px;
+}
+
+.about-breadcrumb{
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.about-badge-btn{
+  margin-top: 40px;
+  margin: 0 0 0 0;
+}
+
+.about-title{
+  font-size: 2.6rem;
+  margin-top: 0;
+}
+
+.about-hero-content{
+align-items: center;
+text-align: center;
+}
+
+
+.about-desc-div{
+
+ 
+  margin-left: 23%;
+  margin-right: 23%;
+  align-items: flex-start;
+}
+
+
+.about-desc{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1; /* Tightest line spacing */
+  align-self: flex-start;
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.about-hero p {
+  color: #aaa;
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.portfolio-product-section {
+  background: white; 
+  padding: 40px 0;
+}
+
+.section2{
+   background: #f5f5f5; /* light grey */
+}
+
+.portfolio-product-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.portfolio-product-image img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  height: 410px;
+  margin-top: 30px;
+}
+
+.portfolio-product-details {
+  flex: 1;
+  margin-top: 0;
+ 
+}
+
+.portfolio-product-details h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.portfolio-product-details p {
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.portfolio-product-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-product-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio-product-details li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 28px;
+}
+
+.portfolio-product-details li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #111;
+  font-size: 1.1em;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+  gap: 8px;
+}
+
+.pagination button {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pagination button.active,
+.pagination button:hover:not(:disabled) {
+  background: #111;
+  color: #fff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+

@@ -1,0 +1,148 @@
+.ourwork-root {
+  background: #fff;
+  padding: 56px 0 56px 0;
+}
+
+.ourwork-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  padding: 0 12px;
+}
+
+.ourwork-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.ourwork-viewall {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+.ourwork-viewall:hover {
+  background: #222;
+}
+
+.ourwork-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 12px;
+}
+
+.ourwork-card {
+  background: #f6f6f6;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.ourwork-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.ourwork-img-wrap {
+  width: 100%;
+  aspect-ratio: 16/11;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourwork-img {
+  width: 90%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 8px 0 0 0;
+}
+
+.ourwork-card-bottom {
+    background: #eaeaea;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 18px 18px 18px;
+}
+.ourwork-card-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #111;
+  align-self: flex-end;
+  margin-top: 6px;
+}
+.ourwork-card-arrow {
+  background: #111;
+  color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-left: auto;
+  align-self: flex-end;
+  margin-right: 28px;
+}
+.ourwork-card-arrow:hover {
+  background: #222;
+}
+
+@media (max-width: 1100px) {
+  .ourwork-cards {
+    gap: 18px;
+  }
+  .ourwork-card {
+    width: 90vw;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .ourwork-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 0 8px;
+  }
+  .ourwork-title {
+    font-size: 1.5rem;
+  }
+  .ourwork-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .ourwork-card {
+    width: 98vw;
+    max-width: 98vw;
+  }
+} 
