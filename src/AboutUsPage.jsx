@@ -23,8 +23,9 @@ const AboutUsPage = () => {
 
       {/* Hero Section */}
       <section className="about-hero">
+        <div className="about-breadcrumb">Home / About Us</div>
         <div className="about-hero-content">
-          <div className="about-breadcrumb">Home / About Us</div>
+          
           <button className="about-badge-btn">About Us</button>
           <h1 className="about-title">Transforming ideas into exceptional<br/>digital experiences through cutting-edge technology.</h1>
         </div>

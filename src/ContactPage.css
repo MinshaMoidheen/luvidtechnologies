@@ -22,7 +22,7 @@
 }
 
 .contact-breadcrumb {
-  color: #888;
+  color: #5b5b5b;
   font-size: 1.01rem;
   margin-bottom: 18px;
 }
@@ -79,7 +79,7 @@
 }
 .contact-info-label {
   font-size: 1.01rem;
-  color: #888;
+  color: #000;
   margin-bottom: 2px;
 }
 .contact-info-value {

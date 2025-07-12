@@ -33,7 +33,7 @@ const ContactPage = () => {
       <section className="contact-root">
         <div className="contact-row">
           <div className="contact-left">
-            <div className="contact-breadcrumb">Home / Contact</div>
+            <div className="contact-breadcrumb">Home / <b>Contact</b> </div>
             <button className="contact-badge-btn">Contact Us ?</button>
             <h1 className="contact-title">Have a project in mind?</h1>
             <p className="contact-desc">
