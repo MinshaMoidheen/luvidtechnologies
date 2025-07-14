@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaArrowRight, FaCheckCircle } from 'react-icons/fa';
 import './PortfolioSection.css';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
@@ -80,7 +81,7 @@ const PortfolioSection = () => {
           <div className="portfolio-badge">Portfolio</div>
           <h2 className="portfolio-title">Company Solutions &<br />Product Portfolio</h2>
         </div>
-        <a className="portfolio-btn" href="#">Portfolio <FaArrowRight /></a>
+        <Link to="works"><a className="portfolio-btn" href="#">Portfolio <FaArrowRight /></a></Link>
       </div>
       <div className="portfolio-cards">
         {visibleProjects.map((project, idx) => (

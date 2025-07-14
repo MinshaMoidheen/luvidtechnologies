@@ -2,6 +2,7 @@ import React from 'react';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import './OurWorkSection.css';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
@@ -25,7 +26,7 @@ const OurWorkSection = () => (
   <section className="ourwork-root">
     <div className="ourwork-header-row">
       <h2 className="ourwork-title">Our Work</h2>
-      <a className="ourwork-viewall" href="#">View all Work <FaArrowRight /></a>
+     <Link to="works"><a className="ourwork-viewall" href="#">View all Work <FaArrowRight /></a></Link> 
     </div>
     <div className="ourwork-cards">
       {projects.map((project) => (

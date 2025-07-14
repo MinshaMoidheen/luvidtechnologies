@@ -31,8 +31,8 @@ const HeroSection = () => {
             through cutting-edge technology and innovative solutions.
           </p>
           <div className="hero-buttons">
-            <button className="talk-btn">Talk to Us</button>
-            <button className="learn-btn">Learn More</button>
+           <Link to="contact"><button className="talk-btn">Talk to Us</button></Link> 
+           <Link to="aboutus"><button className="learn-btn">Learn More</button></Link> 
           </div>
         </div>
         <div className="hero-right">
