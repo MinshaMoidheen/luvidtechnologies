@@ -1,25 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AboutUsPage.css';
 import { Link } from 'react-router-dom';
 import FooterSection from './FooterSection';
 
 const AboutUsPage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       {/* Header/Navbar for About Us Page only */}
       <header className="hero-header">
-              <div className="logo">LUVID</div>
-              <nav className="hero-nav">
-                <a href="/">Home</a>
-                          <Link to="/aboutus"><a href="#about">About</a></Link>
-                          <a href="#services">Services</a>
-                          <Link to='/works'><a>Products</a></Link>
-                          <Link to="/blog"><a href="#blogs">Blogs</a></Link>
-                          <a href="#testimonials">Testimonials</a>
-                          <a href="#careers">Careers</a>
-              </nav>
-              <Link to="/contact"><button className="contact-btn">Contact</button></Link>
-            </header>
+        <div className="logo">LUVID</div>
+        <nav className="hero-nav">
+          <a href="/">Home</a>
+          <Link to="/aboutus"><a href="#about">About</a></Link>
+          <a href="#services">Services</a>
+          <Link to='/works'><a>Products</a></Link>
+          <Link to="/blog"><a href="#blogs">Blogs</a></Link>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#careers">Careers</a>
+        </nav>
+        <Link to="/contact"><button className="contact-btn">Contact</button></Link>
+        
+        {/* Mobile Menu Button */}
+        <button className="mobile-menu-btn" onClick={toggleMenu}>
+          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+        </button>
+      </header>
+
+      {/* Mobile Side Menu */}
+      <div className={`mobile-menu-overlay ${isMenuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
+      <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
+        <div className="mobile-menu-header">
+          <div className="logo">LUVID</div>
+          <button className="close-menu-btn" onClick={closeMenu}>
+            <span className="close-icon">×</span>
+          </button>
+        </div>
+        <nav className="mobile-nav">
+          <a href="/" onClick={closeMenu}>Home</a>
+          <Link to="/aboutus" onClick={closeMenu}><a href="#about">About</a></Link>
+          <a href="#services" onClick={closeMenu}>Services</a>
+          <Link to='/works' onClick={closeMenu}><a>Products</a></Link>
+          <Link to="/blog" onClick={closeMenu}><a href="#blogs">Blogs</a></Link>
+          <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
+          <a href="#careers" onClick={closeMenu}>Careers</a>
+        </nav>
+        <div className="mobile-menu-footer">
+          <Link to="/contact" onClick={closeMenu}>
+            <button className="mobile-contact-btn">Contact</button>
+          </Link>
+        </div>
+      </div>
 
       {/* Hero Section */}
       <section className="about-hero">
@@ -161,10 +201,6 @@ const AboutUsPage = () => {
       </section>
 
     <FooterSection/>
-
-
-
-
 
     </>
   );
