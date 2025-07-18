@@ -198,10 +198,10 @@ const Works = () => {
         <div className="about-breadcrumb">Home / <b>Portfolio</b></div>
         <div className="about-hero-content">
           
-          <button className="about-badge-btn">Portfolio</button>
-          <h1 className="about-title">Company Solutions & Product <br /> Portfolio <br />
+          <button className="portfolio-badge-btn">Portfolio</button>
+          <h1 className="portfolio-title">Company Solutions & Product <br /> Portfolio <br />
           
-          <p>Discover our innovations in analytics-driven applications and let it drive new utilities for your organisation workflow.</p>
+          <p className="portfolio-desc">Discover our innovations in analytics-driven applications and let it drive new utilities for your organisation workflow.</p>
           
           </h1>
         </div>

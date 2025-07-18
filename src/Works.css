@@ -8,14 +8,17 @@
   margin-bottom: 50px;
 }
 
-.about-badge-btn{
+.portfolio-badge-btn{
   margin-top: 40px;
   margin: 0 0 0 0;
 }
 
-.about-title{
+.portfolio-title{
   font-size: 2.6rem;
   margin-top: 0;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .about-hero-content{
@@ -33,8 +36,8 @@ text-align: center;
 }
 
 
-.about-desc{
-  margin-top: 0;
+.portfolio-desc{
+  margin-top: 10px;
   margin-bottom: 0;
   font-size: 15px;
   font-weight: 200;
@@ -323,6 +326,70 @@ text-align: center;
   
   .mobile-menu-btn {
     display: block;
+  }
+
+
+  .portfolio-title{
+    font-size: 1.5rem;
+  }
+
+  .portfolio-desc{
+    font-size: 1rem;
+  }
+
+  .about-breadcrumb{
+    margin-left: 20px;
+  }
+  
+  .portfolio-product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0 16px;
+  }
+  
+  .portfolio-product-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portfolio-product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .portfolio-product-details {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .portfolio-product-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+  
+  .portfolio-product-details p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-product-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  
+  .portfolio-product-details ul {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-product-details li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
   }
 }
 
