@@ -51,49 +51,61 @@
   background: #000;
   color: #fff;
   width: 100vw;
-  height: 800px;
-  padding: 40px 0 56px 0;
+  padding: 160px 0 200px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
+.about-dark{
+  background: #000;
+   width: 100vw;
+}
+
+
 .about-hero-content {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 90vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0;
+  text-align: center;
 }
 .about-breadcrumb {
   color: #fff;
-  font-size: 1.1rem;
-  margin-left: 100px;
+  font-size: 1rem;
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  margin: 0;
 }
 .about-badge-btn {
-  background: #222;
+  background: #333;
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
   border: none;
-  border-radius: 12px;
-  padding: 12px 36px;
- 
-  margin-top: 0;
+  border-radius: 8px;
+  padding: 10px 24px;
+  margin-bottom: 40px;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: background 0.2s;
 }
 
 
 .about-hero .about-title {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size:2rem;
+  font-weight: 600;
   color: #fff;
   text-align: center;
-  line-height: 1.13;
-  margin-bottom: 500px;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 800px;
+  margin-bottom: 80px;
 }
 
 .about-image-section {
@@ -112,7 +124,7 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  margin-top: -200px;
+  margin-top: -140px;
   background: #fff;
 }
 .about-image-card img {
@@ -369,12 +381,26 @@ width: 92vw;
     width: 100%;
     text-align: center;
   }
+  .about-hero {
+    padding: 80px 0 120px 0;
+  }
+  .about-breadcrumb {
+    top: 20px;
+    left: 24px;
+    font-size: 0.9rem;
+  }
   .about-hero-content {
     width: 98vw;
     padding: 0 8px;
   }
   .about-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    max-width: 600px;
+  }
+  .about-badge-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    margin-bottom: 30px;
   }
   .about-image-card img {
     height: 180px;

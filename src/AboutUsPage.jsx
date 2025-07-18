@@ -62,7 +62,9 @@ const AboutUsPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="about-hero">
+
+      <div className='about-dark'>
+<section className="about-hero">
         <div className="about-breadcrumb">Home / About Us</div>
         <div className="about-hero-content">
           
@@ -78,6 +80,8 @@ const AboutUsPage = () => {
           <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="UL CyberPark" />
         </div>
       </section>
+      </div>
+      
 
       {/* Who We Are Section */}
       <section className="about-who-section">
