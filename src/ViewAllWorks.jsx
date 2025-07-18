@@ -107,7 +107,7 @@ const ViewAllWorks = () => {
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>
-          <a href="#services">Services</a>
+          <Link to="/services"><a href="#services">Services</a></Link>
           <Link to='/works'><a>Products</a></Link>
           <Link to="/blog"><a href="#blogs">Blogs</a></Link>
           <a href="#testimonials">Testimonials</a>

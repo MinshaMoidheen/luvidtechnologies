@@ -150,11 +150,11 @@ const Works = () => {
     <>
       {/* Header/Navbar for Works Page */}
       <header className="hero-header">
-        <div className="logo">LUVID</div>
+       <Link to='/'><div className="logo">LUVID</div></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>
-          <a href="#services">Services</a>
+          <Link to="/services"><a href="#services">Services</a></Link>
           <Link to='/works'><a>Products</a></Link>
           <Link to="/blog"><a href="#blogs">Blogs</a></Link>
           <a href="#testimonials">Testimonials</a>
