@@ -116,6 +116,13 @@
   z-index: 1;
   box-sizing: border-box;
 }
+
+.about-hero-logo-bg img {
+  height: 80vh;
+  width: auto;
+  object-fit: contain;
+  max-width: 100%;
+}
 .about-hero-logo-text {
   font-size: 15vw;
   font-weight: 900;
@@ -195,6 +202,11 @@
     align-items: center;
     height: 180px;
   }
+  
+  .about-hero-logo-bg img {
+    height: 80vh;
+    width: auto;
+  }
   .about-hero-logo-text {
     font-size: 18vw;
   }
@@ -222,9 +234,17 @@
   .about-hero-btn {
     padding: 14px 24px;
     font-size: 1rem;
+    margin-bottom: 50px;
   }
   .about-hero-logo-bg {
     height: 80px;
+  }
+  
+  .about-hero-logo-bg img {
+    height: 80vh;
+    width: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
   .about-hero-logo-text {
     font-size: 22vw;
@@ -232,7 +252,7 @@
   .about-hero-stats {
     flex-direction: column;
     gap: 8px;
-    margin-top: 18px;
+    margin-top: 65px;
     padding: 0 16px 18px 16px;
   }
   .about-hero-stat {

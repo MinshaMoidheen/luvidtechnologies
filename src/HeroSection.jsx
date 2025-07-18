@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
 import luvidlogo from './assets/LUVID-LOGO.png'
+import heroImage from './assets/banner.jpg'
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,7 +84,7 @@ const HeroSection = () => {
         </div>
         <div className="hero-right">
           <img
-            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=500&h=500&facepad=2"
+            src={heroImage}
             alt="Hero"
             className="hero-image"
           />

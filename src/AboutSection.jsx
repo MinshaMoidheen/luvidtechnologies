@@ -1,5 +1,7 @@
 import React from 'react';
 import './AboutSection.css';
+import luvidlogo from './assets/LUVID-LOGO.png'
+
 
 const AboutSection = () => {
   return (
@@ -18,7 +20,8 @@ const AboutSection = () => {
           </button>
         </div>
         <div className="about-hero-logo-bg">
-          <span className="about-hero-logo-text">LUVID</span>
+          <img src={luvidlogo} alt="" />
+          {/* <span className="about-hero-logo-text">LUVID</span> */}
         </div>
       </div>
       <div className="about-hero-stats">
