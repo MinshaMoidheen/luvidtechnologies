@@ -3,6 +3,10 @@ import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import './OurWorkSection.css';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import mistu from "./assets/Mistudiu.png"
+import pasunooti from './assets/Pasunooti.png'
+
+
 
 const projects = [
   {
@@ -12,12 +16,12 @@ const projects = [
   },
   {
     title: 'Mistudiu',
-    img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=600&h=400&facepad=2',
+    img: mistu,
     link: '#'
   },
   {
     title: 'Pasunooti Hospitals',
-    img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=600&h=400&facepad=2',
+    img: pasunooti,
     link: '#'
   },
 ];

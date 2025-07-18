@@ -53,7 +53,7 @@
 
 /* Hero Section */
 .works-hero {
-  background: #000;
+  background: #272626;
   color: #fff;
   padding: 120px 0 80px 0;
   position: relative;
@@ -78,7 +78,7 @@
   color: #fff;
   z-index: 2;
   margin-left: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .works-hero-content {
@@ -197,8 +197,9 @@
 
 .laptop-container {
   position: relative;
+  
  
-  perspective: 1000px;
+ 
 }
 
 .laptop-screen {
@@ -209,8 +210,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-  transform: rotateX(10deg);
-  transform-style: preserve-3d;
+ 
 }
 
 .laptop-screen::after {
@@ -780,5 +780,42 @@
   
   .works-stat-label {
     font-size: 0.9rem;
+  }
+} 
+
+.workimage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.works-hero-content {
+  flex: 1;
+}
+
+.about-hero-logo-bg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .workimage {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 24px;
+  }
+  .about-hero-logo-bg {
+    width: 100%;
+    justify-content: center;
+  }
+  .works-hero-content {
+    width: 100%;
   }
 } 

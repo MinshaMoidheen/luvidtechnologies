@@ -3,6 +3,8 @@ import './BlogPage.css';
 import { Link } from 'react-router-dom';
 import FooterSection from './FooterSection';
 import luvidlogo from './assets/LUVID-LOGO.png'
+import heroImage from './assets/banner.jpg'
+
 
 
 const filters = [
@@ -24,7 +26,7 @@ const blogs = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80',
+    image: heroImage,
     category: 'Blogs',
     readTime: '8 min read',
     title: 'Top 5 Reasons to Choose Noviindus Technologies for Your Mobile App',

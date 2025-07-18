@@ -3,6 +3,8 @@ import './AboutUsPage.css';
 import { Link } from 'react-router-dom';
 import FooterSection from './FooterSection';
 import luvidlogo from './assets/LUVID-LOGO.png'
+import ul from './assets/ulcyberpark.jpg'
+
 
 const AboutUsPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,7 +80,7 @@ const AboutUsPage = () => {
       {/* Image Section */}
       <section className="about-image-section">
         <div className="about-image-card">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="UL CyberPark" />
+          <img src={ul} alt="UL CyberPark" />
         </div>
       </section>
       </div>

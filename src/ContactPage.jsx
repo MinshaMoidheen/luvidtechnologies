@@ -3,6 +3,8 @@ import './ContactPage.css';
 import FooterSection from './FooterSection';
 import { Link } from 'react-router-dom';
 import luvidlogo from './assets/LUVID-LOGO.png'
+import ul from './assets/ulcyberpark.jpg'
+
 
 
 const tabs = [
@@ -149,14 +151,14 @@ const ContactPage = () => {
       <section className="location-section">
         <div className="location-card">
           <div className="location-image">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="UL CyberPark" />
+            <img src={ul} alt="UL CyberPark" />
           </div>
           <div className="location-info">
             <h2 className="location-title">Our Locations</h2>
             <hr className="location-divider" />
             <div className="location-name">UL CyberPark</div>
             <div className="location-address">ULCCS LTD SEZ Nellikode,<br/>Kerala 673016</div>
-            <a className="location-btn" href="https://goo.gl/maps/ULCyberPark" target="_blank" rel="noopener noreferrer">
+            <a className="location-btn" href="https://maps.app.goo.gl/r6rtHaaDNwF48KCR6" target="_blank" rel="noopener noreferrer">
               Get Direction <span className="arrow">→</span>
             </a>
           </div>

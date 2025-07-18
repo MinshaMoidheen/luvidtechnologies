@@ -3,6 +3,24 @@ import './ViewAllWorks.css';
 import { Link } from 'react-router-dom';
 import FooterSection from "./FooterSection";
 import luvidlogo from './assets/LUVID-LOGO.png'
+import mistu from "./assets/Mistudiu.png"
+import pasunooti from './assets/Pasunooti.png'
+import psycho from './assets/CompetentPsychologist.png'
+import deltamoscots from './assets/DeltaMascots.png'
+import scraps from './assets/HMScraps.png'
+import innovect from './assets/Innovect.ae.png'
+import lakkidi from './assets/LakkidiInn.png'
+import oto from './assets/OtoGadge.png'
+import tele from './assets/TelalEcommerce.png'
+import hrms from './assets/hrms.png'
+
+
+
+
+
+
+
+
 
 
 const ViewAllWorks = () => {
@@ -26,73 +44,73 @@ const ViewAllWorks = () => {
       image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&h=600",
       alt: "Delta Destinations",
       title: "Delta Destinations",
-      desc: "A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities."
+      desc: "A comprehensive travel and tourism platform offering seamless booking experiences for destinations worldwide. Features include real-time availability, secure payments, and personalized travel recommendations."
     },
     {
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&h=600",
+      image: mistu,
       alt: "Mistudiu",
       title: "Mistudiu",
-      desc: "A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities."
+      desc: "An innovative interior design platform connecting clients with professional designers. Features include project management, 3D visualization tools, and secure payment processing for design services."
     },
     {
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&h=600",
+      image: pasunooti,
       alt: "Pasunooti Hospitals",
       title: "Pasunooti Hospitals",
-      desc: "A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities."
+      desc: "A comprehensive healthcare management system for hospitals and medical facilities. Includes patient management, appointment scheduling, medical records, and telemedicine capabilities."
+    },
+    {
+      image: psycho,
+      alt: "Competent Psychologist",
+      title: "Competent Psychologist",
+      desc: "A mental health platform connecting patients with licensed psychologists. Features include secure video consultations, appointment scheduling, and digital therapy resources."
+    },
+    {
+      image: deltamoscots,
+      alt: "Delta Moscots",
+      title: "Delta Moscots",
+      desc: "A creative design agency portfolio showcasing branding, web design, and digital marketing services. Features include project galleries, client testimonials, and service offerings."
+    },
+    {
+      image: scraps,
+      alt: "HM Scraps",
+      title: "HM Scraps",
+      desc: "A waste management and recycling platform for businesses and municipalities. Features include waste tracking, recycling analytics, and sustainability reporting tools."
+    },
+    {
+      image: innovect,
+      alt: "Innovect.ae",
+      title: "Innovect.ae",
+      desc: "A technology consulting and digital transformation platform. Offers services in cloud migration, AI implementation, and digital strategy for enterprise clients."
+    },
+    {
+      image: lakkidi,
+      alt: "Lakkidi Inn",
+      title: "Lakkidi Inn",
+      desc: "A boutique hotel booking and management system. Features include room reservations, guest services, and property management tools for hospitality businesses."
+    },
+    {
+      image: oto,
+      alt: "Oto Gadge",
+      title: "Oto Gadge",
+      desc: "An automotive parts and accessories e-commerce platform. Features include product catalog, inventory management, and secure payment processing for automotive businesses."
+    },
+    {
+      image: tele,
+      alt: "Tele Ecommerce",
+      title: "Tele Ecommerce",
+      desc: "A telecommunications equipment and services marketplace. Features include product listings, service packages, and customer support integration for telecom businesses."
+    },
+    {
+      image: hrms,
+      alt: "HRMS",
+      title: "HRMS - Human Resource Management System",
+      desc: "A comprehensive HR management platform for enterprises. Features include employee management, payroll processing, performance tracking, and recruitment tools."
     },
     {
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       alt: "Stock Flow Product",
       title: "Stock Flow – Warehouse Inventory Management System",
-      desc: "A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-      alt: "AI-Powered Facial Recognition Attendance System",
-      title: "AI-Powered Facial Recognition Attendance System",
-      desc: "A smart facial recognition system for marking attendance with AI, offering seamless access from any device and location."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "E-Commerce Platform",
-      title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
-      desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-      alt: "Project 7",
-      title: "Project 7",
-      desc: "Description for project 7."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
-      alt: "Project 8",
-      title: "Project 8",
-      desc: "Description for project 8."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "Project 9",
-      title: "Project 9",
-      desc: "Description for project 9."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&h=600",
-      alt: "Project 10",
-      title: "Project 10",
-      desc: "Description for project 10."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&h=600",
-      alt: "Project 11",
-      title: "Project 11",
-      desc: "Description for project 11."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&h=600",
-      alt: "Project 12",
-      title: "Project 12",
-      desc: "Description for project 12."
+      desc: "A scalable solution for managing warehouse inventory across multiple stores. Features include real-time stock tracking, supplier management, invoice generation, and comprehensive financial reporting for medium to large-scale storage facilities."
     }
   ];
 
@@ -151,11 +169,18 @@ const ViewAllWorks = () => {
             {/* Hero Section */}
       <section className="works-hero">
         <div className="allworks-breadcrumb">Home / <b>Our Work</b> </div>      
-        <div className="works-hero-content">
+       <div className="workimage">
+         <div className="works-hero-content">
           <button className="works-badge-btn">Our Work</button>
           <h1 className="works-title">Real success stories & solutions</h1>
           <p className="works-desc">Discover our innovations in analytics-driven applications and let it drive new utilities for your organisation workflow.</p>
         </div>
+
+        <div className="about-hero-logo-bg">
+                  <img src={luvidlogo} alt="" />
+                  {/* <span className="about-hero-logo-text">LUVID</span> */}
+                </div>
+       </div>
         
         {/* Statistics Section */}
         <div className="works-stats">
@@ -188,9 +213,7 @@ const ViewAllWorks = () => {
                 <div className="laptop-container">
                   <div className="laptop-screen">
                     <img src={project.image} alt={project.alt} />
-                    <div className="screen-overlay">
-                      <h3>{project.title}</h3>
-                    </div>
+                    
                   </div>
                 </div>
                 <div className="project-info">

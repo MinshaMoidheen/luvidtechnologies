@@ -134,7 +134,7 @@
 }
 .about-image-card img {
   width: 100%;
-  height: 280px;         /* Make image taller for more dramatic overlap */
+  height: 400px;
   object-fit: cover;
   border-radius: 18px;
   display: block;
@@ -408,7 +408,7 @@ width: 92vw;
     margin-bottom: 30px;
   }
   .about-image-card img {
-    height: 180px;
+    height: 250px;
   }
   .about-image-card {
     margin-top: -40px;
