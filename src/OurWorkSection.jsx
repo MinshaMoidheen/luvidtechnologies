@@ -26,7 +26,7 @@ const OurWorkSection = () => (
   <section className="ourwork-root">
     <div className="ourwork-header-row">
       <h2 className="ourwork-title">Our Work</h2>
-     <Link to="works"><a className="ourwork-viewall" href="#">View all Work <FaArrowRight /></a></Link> 
+     <Link to="allworks"><a className="ourwork-viewall" href="#">View all Work <FaArrowRight /></a></Link> 
     </div>
     <div className="ourwork-cards">
       {projects.map((project) => (
