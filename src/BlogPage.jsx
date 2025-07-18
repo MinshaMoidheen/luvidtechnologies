@@ -152,7 +152,7 @@ const BlogPage = () => {
       </div>
 
       <section className="blog-root">
-        <div className="blog-breadcrumb">Home / <b>Blog</b></div>
+        <div className='breadcrumbblog'>Home / <b>Blog</b></div>
         <div className="blog-title-row">
           <h1 className="blog-title">Latest Insights</h1>
           <div className="blog-filters">

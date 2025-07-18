@@ -65,7 +65,7 @@ const AboutUsPage = () => {
 
       <div className='about-dark'>
 <section className="about-hero">
-        <div className="about-breadcrumb">Home / About Us</div>
+        <div className='breadcrumpabout'>Home / <b>About Us</b></div>
         <div className="about-hero-content">
           
           <button className="about-badge-btn">About Us</button>

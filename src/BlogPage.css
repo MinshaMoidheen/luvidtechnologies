@@ -16,6 +16,12 @@
   letter-spacing: 2px;
   color: #111;
 }
+
+.breadcrumbblog{
+  margin-left: 70px;
+  margin-top: 60px;
+  color: #000;
+}
 .blog-nav {
   display: flex;
   gap: 36px;

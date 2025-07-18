@@ -47,6 +47,11 @@
   background: #222;
 }
 
+.breadcrumpabout{
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
 .about-hero {
   background: #000;
   color: #fff;
@@ -74,7 +79,7 @@
   gap: 0;
   text-align: center;
 }
-.about-breadcrumb {
+.about1-breadcrumb {
   color: #fff;
   font-size: 1rem;
   position: absolute;
@@ -384,7 +389,7 @@ width: 92vw;
   .about-hero {
     padding: 80px 0 120px 0;
   }
-  .about-breadcrumb {
+  .about1-breadcrumb {
     top: 20px;
     left: 24px;
     font-size: 0.9rem;

@@ -148,7 +148,7 @@ const ViewAllWorks = () => {
 
             {/* Hero Section */}
       <section className="works-hero">
-        <div className="allworks-breadcrumb">Home / Our Work</div>      
+        <div className="allworks-breadcrumb">Home / <b>Our Work</b> </div>      
         <div className="works-hero-content">
           <button className="works-badge-btn">Our Work</button>
           <h1 className="works-title">Real success stories & solutions</h1>
