@@ -18,8 +18,8 @@ const FooterSection = () => (
         <div className="footer-col-title">Company</div>
         <Link to="/aboutus"><a href="#">About</a></Link>
         <Link to="/services"><a href="#">Services</a></Link>
-        <Link to="/works"><a href="#">Works</a></Link>
-        <Link to="/blogs"><a href="#">Blogs</a></Link>
+        <Link to="/allworks"><a href="#">Works</a></Link>
+        <Link to="/blog"><a href="#">Blogs</a></Link>
         <Link to="/testimonial"><a href="#">Testimonials</a></Link>
         <Link to="/careers"><a href="#">Careers</a></Link>
         <Link to="/contact"><a href="#">Contact</a></Link>
@@ -48,9 +48,9 @@ const FooterSection = () => (
     <div className="footer-bar">
       <div className="footer-copyright">© 2024 Luvid. All rights reserved.</div>
       <div className="footer-socials">
-        <a href="#" className="footer-social-icon"><FaInstagram /></a>
+        <a href="https://www.instagram.com/luvid_technologies?igsh=MXMwdmpoanc1N3gycw==" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaInstagram /></a>
         <a href="#" className="footer-social-icon"><FaXTwitter /></a>
-        <a href="#" className="footer-social-icon"><FaWhatsapp /></a>
+        <a href="https://wa.me/918590701815" target="_blank" rel="noopener noreferrer" className="footer-social-icon"><FaWhatsapp /></a>
       </div>
     </div>
   </footer>

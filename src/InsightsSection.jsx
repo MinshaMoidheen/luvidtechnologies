@@ -1,5 +1,6 @@
 import React from 'react';
 import './InsightsSection.css';
+import { Link } from 'react-router-dom';
 
 const blogs = [
   {
@@ -24,7 +25,8 @@ const InsightsSection = () => (
         <p className="insights-desc">
           At Luvid Technologies, we are passionate about building innovative digital solutions that drive business growth and enhance user experiences. With a strong foundation in cutting-edge technologies and a commitment to quality, we specialize in crafting web and mobile applications tailored to meet our clients' unique needs.
         </p>
-        <button className="insights-btn">See all Insights <span className="insights-arrow">→</span></button>
+       <Link to="blog">
+       <button className="insights-btn">See all Insights <span className="insights-arrow">→</span></button></Link> 
       </div>
       <div className="insights-right">
         {blogs.map((blog, idx) => (
