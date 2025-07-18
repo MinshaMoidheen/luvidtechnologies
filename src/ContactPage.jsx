@@ -37,8 +37,8 @@ const ContactPage = () => {
           <Link to="/services"><a href="#services">Services</a></Link>
           <Link to='/works'><a>Products</a></Link>
           <Link to="/blog"><a href="#blogs">Blogs</a></Link>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#careers">Careers</a>
+          <a href="/testimonial">Testimonials</a>
+          {/* <a href="#careers">Careers</a> */}
         </nav>
         <Link to="/contact"><button className="contact-btn">Contact</button></Link>
         

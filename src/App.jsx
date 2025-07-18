@@ -14,6 +14,7 @@ import BlogPage from './BlogPage';
 import Works from './Works';
 import ViewAllWorks from './ViewAllWorks';
 import ServicePage from './ServicePage';
+import TestimonialPage from './TestimonialPage';
 
 function Home() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/works" element={<Works/>} />
         <Route path="/allworks" element={<ViewAllWorks/>} />
+        <Route path="/testimonial" element={<TestimonialPage/>} />
       </Routes>
     </BrowserRouter>
   );
