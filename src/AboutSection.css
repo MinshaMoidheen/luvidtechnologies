@@ -18,9 +18,11 @@
   min-height: 480px;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 0;
+  padding: 0 48px;
   position: relative;
   z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-hero-content {
@@ -34,6 +36,7 @@
   max-width: none;
   z-index: 2;
   padding-left: 0;
+  box-sizing: border-box;
 }
 
 .about-hero-badge {
@@ -48,27 +51,23 @@
   padding: 10px 32px;
   font-size: 1.1rem;
   font-weight: 500;
-    margin-left: 70px;
-
 }
 
 .about-hero-title {
-  /* margin-left: 70px; */
   font-size: 2.5rem;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left:70px;
   line-height: 1;
   color: #fff;
    align-self: flex-start;
   max-width: 520px;
- 
   text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-hero-desc {
-  margin-left: 70px;
   align-self: flex-start;
   font-size: 1rem;
   color: #e0e0e0;
@@ -77,13 +76,12 @@
   font-weight: 400;
   max-width: 620px;
   text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-hero-btn {
-   
-
   align-self: flex-start;
-   margin-left: 70px;
   background: #fff;
   color: #111;
   border: none;
@@ -93,7 +91,6 @@
   font-weight: 500;
   cursor: pointer;
   display: flex;
- 
   gap: 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   transition: background 0.2s, color 0.2s;
@@ -117,6 +114,7 @@
   height: 340px;
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
 }
 .about-hero-logo-text {
   font-size: 15vw;
@@ -140,6 +138,8 @@
   margin-right: auto;
   z-index: 2;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 .about-hero-stat {
   font-size: 2.1rem;
@@ -154,17 +154,43 @@
   color: #fff;
 }
 
+@media (max-width: 1200px) {
+  .about-hero-row {
+    padding: 0 32px;
+  }
+}
+
 @media (max-width: 900px) {
   .about-hero-row {
     flex-direction: column;
     gap: 32px;
-    padding: 0 16px;
+    padding: 0 24px;
   }
   .about-hero-content {
+    width: 100%;
+    flex: none;
     max-width: 100%;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .about-hero-badge {
+    align-self: center;
+  }
+  .about-hero-title {
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+  }
+  .about-hero-desc {
+    text-align: center;
+    align-self: center;
+  }
+  .about-hero-btn {
+    align-self: center;
   }
   .about-hero-logo-bg {
+    width: 100%;
+    flex: none;
     justify-content: center;
     align-items: center;
     height: 180px;
@@ -172,13 +198,10 @@
   .about-hero-logo-text {
     font-size: 18vw;
   }
-  .about-hero-title {
-    font-size: 2rem;
-  }
   .about-hero-stats {
     gap: 18px;
     margin-top: 32px;
-    padding: 0 16px 32px 16px;
+    padding: 0 24px 32px 24px;
   }
 }
 
@@ -187,12 +210,17 @@
     padding: 32px 0 0 0;
   }
   .about-hero-row {
-    padding: 0 4px;
+    padding: 0 16px;
+    min-height: 400px;
   }
   .about-hero-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .about-hero-desc {
+    font-size: 0.95rem;
+  }
+  .about-hero-btn {
+    padding: 14px 24px;
     font-size: 1rem;
   }
   .about-hero-logo-bg {
@@ -205,9 +233,39 @@
     flex-direction: column;
     gap: 8px;
     margin-top: 18px;
-    padding: 0 4px 18px 4px;
+    padding: 0 16px 18px 16px;
   }
-  .about-hero-content {
-    align-items: flex-start;
+  .about-hero-stat {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .about-hero-stat span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-row {
+    padding: 0 12px;
+    min-height: 350px;
+  }
+  .about-hero-title {
+    font-size: 1.25rem;
+  }
+  .about-hero-desc {
+    font-size: 0.9rem;
+  }
+  .about-hero-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+  .about-hero-stats {
+    padding: 0 12px 16px 12px;
+  }
+  .about-hero-stat {
+    font-size: 1.3rem;
+  }
+  .about-hero-stat span {
+    font-size: 1.8rem;
   }
 } 

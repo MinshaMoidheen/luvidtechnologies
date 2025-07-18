@@ -1,6 +1,9 @@
 .industries-root {
   background: #f6f6f6;
   padding: 64px 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .industries-row {
@@ -10,13 +13,16 @@
   gap: 48px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 32px 0 64px;
+  padding: 0 48px 0 64px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .industries-left {
   width: 45%;
   min-width: 260px;
   max-width: 420px;
+  box-sizing: border-box;
 }
 .industries-badge {
   display: inline-block;
@@ -34,12 +40,17 @@
   font-weight: 600;
   margin: 0 0 22px 0;
   line-height: 1.13;
+  width: 100%;
+  box-sizing: border-box;
 }
 .industries-desc {
   font-size: 1rem;
   color: #111;
   margin-bottom: 36px;
   font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
 }
 .industries-btn {
   background: #000;
@@ -73,6 +84,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
+  box-sizing: border-box;
 }
 .industry-card {
   display: flex;
@@ -80,6 +92,8 @@
   gap: 18px;
   padding: 24px 0 24px 0;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 .industry-icon {
   min-width: 48px;
@@ -92,12 +106,17 @@
   font-weight: 500;
   margin-bottom: 6px;
   color: #111;
+  width: 100%;
+  box-sizing: border-box;
 }
 .industry-desc {
   font-size: 1.05rem;
   color: #111;
   font-weight: 400;
   max-width: 100%;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
 }
 .industry-divider {
   position: absolute;
@@ -107,22 +126,6 @@
   height: 1px;
   background: #e0e0e0;
   margin-top: 18px;
-}
-
-@media (max-width: 900px) {
-  .industries-row {
-    flex-direction: column;
-    gap: 32px;
-    padding: 0 8px;
-  }
-  .industries-left, .industries-right {
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-  }
-  .industry-desc {
-    max-width: 100%;
-  }
 }
 
 .industries-arrows {
@@ -164,4 +167,140 @@
 .arrow-right:hover {
   background: #222;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .industries-row {
+    padding: 0 32px 0 48px;
+    gap: 32px;
+  }
+  
+  .industries-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .industries-root {
+    padding: 48px 0 0 0;
+  }
+  
+  .industries-row {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .industries-left, .industries-right {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .industries-badge {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .industries-arrows {
+    display: none;
+  }
+  
+  .industries-title {
+    font-size: 2rem;
+  }
+  
+  .industry-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .industries-root {
+    padding: 32px 0 0 0;
+  }
+  
+  .industries-row {
+    padding: 0 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .industries-title {
+    font-size: 1.6rem;
+  }
+  
+  .industries-desc {
+    font-size: 0.95rem;
+  }
+  
+  .industries-btn {
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+  
+  .industry-card {
+    gap: 12px;
+    padding: 16px 0 16px 0;
+  }
+  
+  .industry-title {
+    font-size: 1.2rem;
+  }
+  
+  .industry-desc {
+    font-size: 0.95rem;
+  }
+  
+  .industry-icon {
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-row {
+    padding: 0 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .industries-title {
+    font-size: 1.4rem;
+  }
+  
+  .industries-badge {
+    font-size: 0.95rem;
+    padding: 6px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .industries-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .industry-card {
+    gap: 10px;
+    padding: 12px 0 12px 0;
+  }
+  
+  .industry-title {
+    font-size: 1.1rem;
+  }
+  
+  .industry-desc {
+    font-size: 0.9rem;
+  }
+  
+  .industry-icon {
+    min-width: 36px;
+  }
 } 

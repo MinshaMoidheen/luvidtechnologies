@@ -115,6 +115,19 @@
 }
 
 @media (max-width: 900px) {
+  .insights-root {
+    padding-top: 20px;
+  }
+  .insights-left {
+    align-items: center;
+  }
+  .insights-title {
+    text-align: center;
+  }
+  .insights-desc {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .insights-row {
     flex-direction: column;
     gap: 32px;

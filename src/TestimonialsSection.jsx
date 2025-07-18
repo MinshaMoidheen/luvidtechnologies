@@ -20,6 +20,7 @@ const testimonials = [
     title: 'CEO and Co-Owner at Perle',
     img: 'https://randomuser.me/api/portraits/men/32.jpg',
   },
+  
 ];
 
 const TestimonialsSection = () => (
