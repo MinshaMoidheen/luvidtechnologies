@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const blogs = [
   {
-    img: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=400&h=220&facepad=2',
+    img: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80',
     meta: 'Blogs  9 min read',
     title: 'Progressive Web Apps vs. Native Apps: Which is Right for Your Business?',
     date: '04 january 2025',
   },
   {
-    img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=400&h=220&facepad=2',
+    img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80',
     meta: 'Blogs  8 min read',
     title: 'Top 5 Reasons to Choose Noviindus Technologies for Your Mobile App Development Needs',
     date: '04 january 2025',
