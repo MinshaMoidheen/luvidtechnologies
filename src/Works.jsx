@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './Works.css';
 import { Link } from 'react-router-dom';
 import FooterSection from "./FooterSection";
+import luvidlogo from './assets/LUVID-LOGO.png'
+
 
 const PRODUCTS_PER_PAGE = 3;
 
@@ -150,7 +152,8 @@ const Works = () => {
     <>
       {/* Header/Navbar for Works Page */}
       <header className="hero-header">
-       <Link to='/'><div className="logo">LUVID</div></Link>
+               <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
+
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>

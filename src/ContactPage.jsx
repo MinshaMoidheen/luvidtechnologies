@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './ContactPage.css';
 import FooterSection from './FooterSection';
 import { Link } from 'react-router-dom';
+import luvidlogo from './assets/LUVID-LOGO.png'
+
 
 const tabs = [
   { label: 'Get a Quote' },
@@ -26,7 +28,7 @@ const ContactPage = () => {
     <>
       {/* Header/Navbar for Contact Page only */}
       <header className="hero-header">
-        <Link to='/'><div className="logo">LUVID</div></Link>
+         <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>

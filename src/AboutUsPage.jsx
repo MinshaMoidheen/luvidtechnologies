@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './AboutUsPage.css';
 import { Link } from 'react-router-dom';
 import FooterSection from './FooterSection';
+import luvidlogo from './assets/LUVID-LOGO.png'
 
 const AboutUsPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const AboutUsPage = () => {
     <>
       {/* Header/Navbar for About Us Page only */}
       <header className="hero-header">
-        <Link to='/'><div className="logo">LUVID</div></Link>
+        <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>

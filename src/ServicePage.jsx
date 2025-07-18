@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import FooterSection from './FooterSection';
 import './ServicePage.css';
 import { FaLaptopCode, FaProjectDiagram, FaBookOpen, FaMobileAlt, FaRocket, FaSearch, FaCloud, FaServer, FaRobot } from 'react-icons/fa';
+import luvidlogo from './assets/LUVID-LOGO.png'
 
 const ServicePage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,7 +68,7 @@ const ServicePage = () => {
     <>
       {/* Header */}
       <header className="hero-header">
-        <Link to='/'><div className="logo">LUVID</div></Link>
+         <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>

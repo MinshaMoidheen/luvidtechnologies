@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './BlogPage.css';
 import { Link } from 'react-router-dom';
 import FooterSection from './FooterSection';
+import luvidlogo from './assets/LUVID-LOGO.png'
+
 
 const filters = [
   { label: 'All' },
@@ -108,7 +110,7 @@ const BlogPage = () => {
     <>
       {/* Header/Navbar for Blog Page only */}
       <header className="hero-header">
-        <Link to='/'><div className="logo">LUVID</div></Link>
+        <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>

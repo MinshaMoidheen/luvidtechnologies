@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './ViewAllWorks.css';
 import { Link } from 'react-router-dom';
 import FooterSection from "./FooterSection";
+import luvidlogo from './assets/LUVID-LOGO.png'
+
 
 const ViewAllWorks = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,7 +105,7 @@ const ViewAllWorks = () => {
     <>
       {/* Header/Navbar */}
       <header className="hero-header">
-        <div className="logo">LUVID</div>
+        <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/aboutus"><a href="#about">About</a></Link>
