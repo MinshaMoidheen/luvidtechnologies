@@ -96,14 +96,14 @@ const ServicePage = () => {
           </button>
         </div>
         <nav className="mobile-nav">
-          <a href="/" onClick={closeMenu}>Home</a>
-          <Link to="/aboutus" onClick={closeMenu}><a href="#about">About</a></Link>
-          <a href="#services" onClick={closeMenu}>Services</a>
-          <Link to='/works' onClick={closeMenu}><a>Products</a></Link>
-          <Link to="/blog" onClick={closeMenu}><a href="#blogs">Blogs</a></Link>
-          <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
-          <a href="#careers" onClick={closeMenu}>Careers</a>
-        </nav>
+                  <a href="/" onClick={closeMenu}>Home</a>
+                  <Link to="/aboutus" onClick={closeMenu}><a href="#about">About</a></Link>
+                  <a href="/services" onClick={closeMenu}>Services</a>
+                  <Link to='/works' onClick={closeMenu}><a>Products</a></Link>
+                  <Link to="/blog" onClick={closeMenu}><a href="#blogs">Blogs</a></Link>
+                  <a href="/testimonial" onClick={closeMenu}>Testimonials</a>
+                  {/* <a href="#careers" onClick={closeMenu}>Careers</a> */}
+                </nav>
         <div className="mobile-menu-footer">
           <Link to="/contact" onClick={closeMenu}>
             <button className="mobile-contact-btn">Contact</button>
