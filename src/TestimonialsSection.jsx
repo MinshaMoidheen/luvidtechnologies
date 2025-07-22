@@ -3,6 +3,7 @@ import './TestimonialsSection.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import { Link } from 'react-router-dom';
 
 const testimonials = [
   {
@@ -81,7 +82,10 @@ const TestimonialsSection = () => {
           ))}
         </div>
       )}
-      <button className="testimonials-btn">View all Testimonials <span className="testimonials-arrow">→</span></button>
+      <Link to="testimonial">
+            <button className="testimonials-btn">View all Testimonials <span className="testimonials-arrow">→</span></button>
+
+      </Link>
     </section>
   );
 };
