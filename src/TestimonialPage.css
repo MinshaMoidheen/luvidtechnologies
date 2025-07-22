@@ -96,9 +96,9 @@
 .testimonial-badge-btn {
   background: rgba(255, 255, 255, 0.2);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+ 
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 24px;
@@ -110,6 +110,7 @@
   font-weight: 700;
   margin-bottom: 24px;
   line-height: 1.2;
+  color: white;
 }
 
 .testimonial-desc {

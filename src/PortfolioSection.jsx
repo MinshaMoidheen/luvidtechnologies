@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { FaArrowRight, FaCheckCircle } from 'react-icons/fa';
 import './PortfolioSection.css';
 import { Link } from 'react-router-dom';
+import face from './assets/app_page.png'
+import tele from './assets/TelalEcommerce.png'
+
+
 
 const projects = [
   {
@@ -18,7 +22,7 @@ const projects = [
     ],
   },
   {
-    img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=600&h=400&facepad=2',
+    img: face,
     alt: 'AI-Powered Facial Recognition Attendance System',
     title: 'AI-Powered Facial Recognition Attendance System',
     desc: 'A smart facial recognition system for marking attendance with AI, offering seamless access from any device and location.',
@@ -30,7 +34,7 @@ const projects = [
     ],
   },
   {
-    img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=600&h=400&facepad=2',
+    img: tele,
     alt: 'E-Commerce Platform (Web + Mobile – iOS/Android)',
     title: 'E-Commerce Platform (Web + Mobile – iOS/Android)',
     desc: 'A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.',

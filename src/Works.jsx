@@ -3,7 +3,9 @@ import './Works.css';
 import { Link } from 'react-router-dom';
 import FooterSection from "./FooterSection";
 import luvidlogo from './assets/LUVID-LOGO.png'
+import face from './assets/app_page.png'
 
+import tele from './assets/TelalEcommerce.png'
 
 const PRODUCTS_PER_PAGE = 3;
 
@@ -34,7 +36,7 @@ const Works = () => {
       ]
     },
     {
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308",
+      image: face,
       alt: "AI-Powered Facial Recognition Attendance System",
       title: "AI-Powered Facial Recognition Attendance System",
       desc: "A smart facial recognition system for marking attendance with AI, offering seamless access from any device and location.",
@@ -46,7 +48,7 @@ const Works = () => {
       ]
     },
     {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      image: tele,
       alt: "E-Commerce Platform",
       title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
       desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.",
@@ -57,85 +59,7 @@ const Works = () => {
         "Native iOS and Android apps for real-time shopping",
         "Comprehensive dashboard for profit and monthly cash flow insights"
       ]
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "E-Commerce Platform",
-      title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
-      desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.",
-      features: [
-        "Unique front-end development for each business",
-        "Admin panel to manage orders, customers, and inventory",
-        "Payment gateway integration & promotional tools",
-        "Native iOS and Android apps for real-time shopping",
-        "Comprehensive dashboard for profit and monthly cash flow insights"
-      ]
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "E-Commerce Platform",
-      title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
-      desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.",
-      features: [
-        "Unique front-end development for each business",
-        "Admin panel to manage orders, customers, and inventory",
-        "Payment gateway integration & promotional tools",
-        "Native iOS and Android apps for real-time shopping",
-        "Comprehensive dashboard for profit and monthly cash flow insights"
-      ]
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "E-Commerce Platform",
-      title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
-      desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.",
-      features: [
-        "Unique front-end development for each business",
-        "Admin panel to manage orders, customers, and inventory",
-        "Payment gateway integration & promotional tools",
-        "Native iOS and Android apps for real-time shopping",
-        "Comprehensive dashboard for profit and monthly cash flow insights"
-      ]
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "E-Commerce Platform",
-      title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
-      desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.",
-      features: [
-        "Unique front-end development for each business",
-        "Admin panel to manage orders, customers, and inventory",
-        "Payment gateway integration & promotional tools",
-        "Native iOS and Android apps for real-time shopping",
-        "Comprehensive dashboard for profit and monthly cash flow insights"
-      ]
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "E-Commerce Platform",
-      title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
-      desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.",
-      features: [
-        "Unique front-end development for each business",
-        "Admin panel to manage orders, customers, and inventory",
-        "Payment gateway integration & promotional tools",
-        "Native iOS and Android apps for real-time shopping",
-        "Comprehensive dashboard for profit and monthly cash flow insights"
-      ]
-    },
-    {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "E-Commerce Platform",
-      title: "E-Commerce Platform (Web + Mobile – iOS/Android)",
-      desc: "A fully customizable e-commerce ecosystem with web and mobile apps, built to scale with your business.",
-      features: [
-        "Unique front-end development for each business",
-        "Admin panel to manage orders, customers, and inventory",
-        "Payment gateway integration & promotional tools",
-        "Native iOS and Android apps for real-time shopping",
-        "Comprehensive dashboard for profit and monthly cash flow insights"
-      ]
-    },
+    }
     // Add more products here as needed
   ];
 

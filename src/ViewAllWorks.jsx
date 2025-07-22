@@ -13,14 +13,7 @@ import lakkidi from './assets/LakkidiInn.png'
 import oto from './assets/OtoGadge.png'
 import tele from './assets/TelalEcommerce.png'
 import hrms from './assets/hrms.png'
-
-
-
-
-
-
-
-
+import deltadestination from './assets/deltadestination.png'
 
 
 const ViewAllWorks = () => {
@@ -41,7 +34,7 @@ const ViewAllWorks = () => {
 
   const worksData = [
     {
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&h=600",
+      image: deltadestination,
       alt: "Delta Destinations",
       title: "Delta Destinations",
       desc: "A comprehensive travel and tourism platform offering seamless booking experiences for destinations worldwide. Features include real-time availability, secure payments, and personalized travel recommendations."

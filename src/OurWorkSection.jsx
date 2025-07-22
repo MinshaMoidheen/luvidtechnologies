@@ -5,13 +5,15 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import mistu from "./assets/Mistudiu.png"
 import pasunooti from './assets/Pasunooti.png'
+import deltadestination from './assets/deltadestination.png'
+
 
 
 
 const projects = [
   {
     title: 'Delta Destinations',
-    img: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=600&h=400&facepad=2',
+    img: deltadestination,
     link: '#'
   },
   {
