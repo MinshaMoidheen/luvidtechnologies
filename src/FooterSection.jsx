@@ -34,9 +34,9 @@ const FooterSection = () => (
       </div>
       <div className="footer-col">
         <div className="footer-col-title">Products</div>
-        <a href="#">Delta</a>
-        <a href="#">Mistudiu</a>
-        <a href="#">Pasunooti</a>
+        <a href="#">HRMS</a>
+        <a href="#">Stock Flow</a>
+        <a href="#">Facial Recognition Attendance System</a>
       </div>
       <div className="footer-col">
         <div className="footer-col-title">Connect</div>
