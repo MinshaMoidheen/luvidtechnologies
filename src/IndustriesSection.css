@@ -213,10 +213,18 @@
   
   .industries-title {
     font-size: 2rem;
+      color: #111;
+
   }
   
   .industry-desc {
     max-width: 100%;
+  }
+
+  .industry-icon {
+    
+      color: #111;
+
   }
 }
 
@@ -235,6 +243,8 @@
   
   .industries-title {
     font-size: 1.6rem;
+      color: #111;
+
   }
   
   .industries-desc {
@@ -261,6 +271,8 @@
   
   .industry-icon {
     min-width: 40px;
+      color: #111;
+
   }
 }
 
@@ -302,5 +314,7 @@
   
   .industry-icon {
     min-width: 36px;
+      color: #111;
+
   }
 } 
