@@ -806,16 +806,32 @@
 }
 
 @media (max-width: 900px) {
+  .works-hero{
+    /* height: 700px; */
+
+  }
   .workimage {
     flex-direction: column;
-    gap: 32px;
+    gap: 10px;
     padding: 0 24px;
   }
-  .about-hero-logo-bg {
+
+  .about-hero-logo-bg img {
+      margin-top: 0;
+    margin-bottom: 0;
     width: 100%;
     justify-content: center;
+    /* background-color: #999; */
+    height: 180px;
   }
   .works-hero-content {
+      margin-top: 0;
+    margin-bottom: 0;
     width: 100%;
+  }
+
+  .works-stats{
+     margin-top: 0;
+    margin-bottom: 0;
   }
 } 

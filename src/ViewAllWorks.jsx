@@ -178,19 +178,19 @@ const ViewAllWorks = () => {
         {/* Statistics Section */}
         <div className="works-stats">
           <div className="works-stat-item">
-            <div className="works-stat-number">1000+</div>
+            <div className="works-stat-number">30+</div>
             <div className="works-stat-label">Websites Delivered</div>
           </div>
           <div className="works-stat-item">
-            <div className="works-stat-number">100+</div>
+            <div className="works-stat-number">20+</div>
             <div className="works-stat-label">Mobile Apps Delivered</div>
           </div>
           <div className="works-stat-item">
-            <div className="works-stat-number">36+</div>
+            <div className="works-stat-number">12+</div>
             <div className="works-stat-label">Countries served</div>
           </div>
           <div className="works-stat-item">
-            <div className="works-stat-number">12+</div>
+            <div className="works-stat-number">5+</div>
             <div className="works-stat-label">Years of experience</div>
           </div>
         </div>
