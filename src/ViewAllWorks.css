@@ -806,10 +806,7 @@
 }
 
 @media (max-width: 900px) {
-  .works-hero{
-    /* height: 700px; */
-
-  }
+  
   .workimage {
     flex-direction: column;
     gap: 10px;
