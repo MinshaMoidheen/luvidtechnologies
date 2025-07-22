@@ -21,14 +21,13 @@ const AboutSection = () => {
         </div>
         <div className="about-hero-logo-bg">
           <img src={luvidlogo} alt="" />
-          {/* <span className="about-hero-logo-text">LUVID</span> */}
         </div>
       </div>
       <div className="about-hero-stats">
-        <div className="about-hero-stat"><span>1000+</span><br />Clients</div>
-        <div className="about-hero-stat"><span>100+</span><br />Projects</div>
-        <div className="about-hero-stat"><span>36+</span><br />Team Members</div>
-        <div className="about-hero-stat"><span>12+</span><br />Years Experience</div>
+        <div className="about-hero-stat"><span>100+</span><br />Clients</div>
+        <div className="about-hero-stat"><span>50+</span><br />Projects</div>
+        <div className="about-hero-stat"><span>20+</span><br />Team Members</div>
+        <div className="about-hero-stat"><span>5+</span><br />Years Experience</div>
       </div>
     </section>
   );
