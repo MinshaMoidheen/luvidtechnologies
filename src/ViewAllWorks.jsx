@@ -14,6 +14,7 @@ import oto from './assets/OtoGadge.png'
 import tele from './assets/TelalEcommerce.png'
 import hrms from './assets/hrms.png'
 import deltadestination from './assets/deltadestination.png'
+import stockflow from './assets/stockflow.png'
 
 
 const ViewAllWorks = () => {
@@ -100,7 +101,7 @@ const ViewAllWorks = () => {
       desc: "A comprehensive HR management platform for enterprises. Features include employee management, payroll processing, performance tracking, and recruitment tools."
     },
     {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      image: stockflow,
       alt: "Stock Flow Product",
       title: "Stock Flow – Warehouse Inventory Management System",
       desc: "A scalable solution for managing warehouse inventory across multiple stores. Features include real-time stock tracking, supplier management, invoice generation, and comprehensive financial reporting for medium to large-scale storage facilities."

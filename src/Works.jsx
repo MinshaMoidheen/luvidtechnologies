@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import FooterSection from "./FooterSection";
 import luvidlogo from './assets/LUVID-LOGO.png'
 import face from './assets/app_page.png'
+import stockflow from './assets/stockflow.png'
 
 import tele from './assets/TelalEcommerce.png'
 
@@ -23,7 +24,7 @@ const Works = () => {
 
   const productSections = [
     {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      image: stockflow,
       alt: "Stock Flow Product",
       title: "Stock Flow – Warehouse Inventory Management System",
       desc: "A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities.",

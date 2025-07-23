@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 import face from './assets/app_page.png'
 import tele from './assets/TelalEcommerce.png'
 
+import stockflow from './assets/stockflow.png'
+
 
 
 const projects = [
   {
-    img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=600&h=400&facepad=2',
+    img: stockflow,
     alt: 'Stock Flow – Warehouse Inventory Management System',
     title: 'Stock Flow – Warehouse Inventory Management System',
     desc: 'A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities.',
