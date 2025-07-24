@@ -13,7 +13,7 @@ const projects = [
   {
     img: stockflow,
     alt: 'Stock Flow – Warehouse Inventory Management System',
-    title: 'Stock Flow – Warehouse Inventory Management System',
+    title: 'Stock Flow',
     desc: 'A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities.',
     features: [
       'Multi-store & multi-user support with role-based access',
