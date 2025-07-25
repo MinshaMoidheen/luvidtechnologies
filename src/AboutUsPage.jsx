@@ -3,7 +3,7 @@ import './AboutUsPage.css';
 import { Link } from 'react-router-dom';
 import FooterSection from './FooterSection';
 import luvidlogo from './assets/LUVID-LOGO.png'
-import ul from './assets/ulcyberpark.jpg'
+import ul from './assets/hilite.avif'
 
 
 const AboutUsPage = () => {

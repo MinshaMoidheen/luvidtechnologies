@@ -3,7 +3,7 @@ import './ContactPage.css';
 import FooterSection from './FooterSection';
 import { Link } from 'react-router-dom';
 import luvidlogo from './assets/LUVID-LOGO.png'
-import ul from './assets/ulcyberpark.jpg'
+import ul from './assets/hilite.avif'
 
 
 
@@ -156,8 +156,10 @@ const ContactPage = () => {
           <div className="location-info">
             <h2 className="location-title">Our Locations</h2>
             <hr className="location-divider" />
-            <div className="location-name">UL CyberPark</div>
-            <div className="location-address">ULCCS LTD SEZ Nellikode,<br/>Kerala 673016</div>
+            <div className="location-name">Hilite Business Park</div>
+            <div className="location-address">HiLITE City National Highway 66,
+Bypass, Thondayad,
+Kozhikode, <br/>Kerala 673016</div>
             <a className="location-btn" href="https://maps.app.goo.gl/r6rtHaaDNwF48KCR6" target="_blank" rel="noopener noreferrer">
               Get Direction <span className="arrow">→</span>
             </a>
