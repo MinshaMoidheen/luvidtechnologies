@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGraduationCap, FaHospitalSymbol, FaHotel, FaGlobe, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import './IndustriesSection.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const industries = [
   {
@@ -20,8 +21,9 @@ const industries = [
     desc: 'Innovative solutions for travel agencies, tour operators, and travel management companies.'
   },
 ];
-
 const IndustriesSection = () => (
+
+  
   <section className="industries-root">
     <div className="industries-row">
       <div className="industries-left">
@@ -30,7 +32,10 @@ const IndustriesSection = () => (
         <p className="industries-desc">
           At Luvid Technologies, we are passionate about building innovative digital solutions that drive business growth and enhance user experiences. With a strong foundation in cutting-edge technologies and a commitment to quality, we specialize in crafting web and mobile applications tailored to meet our clients' unique needs. Our team of creative thinkers and skilled developers works collaboratively to turn ideas into impactful digital products. At Luvid, we believe in delivering excellence, every time.
         </p>
-        <button className="industries-btn">Know More <span className="industries-arrow">→</span></button>
+        <Link to='/allindustries'>
+                <button className="industries-btn">Know More <span className="industries-arrow">→</span></button>
+
+        </Link>
       </div>
       <div className="industries-right">
         {/* <div className="industries-navigation">

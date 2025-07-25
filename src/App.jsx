@@ -16,6 +16,7 @@ import Works from './Works';
 import ViewAllWorks from './ViewAllWorks';
 import ServicePage from './ServicePage';
 import TestimonialPage from './TestimonialPage';
+import ViewAllIndustries from './ViewAllIndustries';
 
 // ScrollToTop component to scroll to top on route change
 function ScrollToTop() {
@@ -58,6 +59,7 @@ function App() {
         <Route path="/works" element={<Works/>} />
         <Route path="/allworks" element={<ViewAllWorks/>} />
         <Route path="/testimonial" element={<TestimonialPage/>} />
+        <Route path="/allindustries" element={<ViewAllIndustries />} />
       </Routes>
     </BrowserRouter>
   );
