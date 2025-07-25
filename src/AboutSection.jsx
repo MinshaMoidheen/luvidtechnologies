@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutSection.css';
-import luvidlogo from './assets/LUVID-LOGO.png'
+import luvidlogo from './assets/LUVID-LOGO-W.png'
 import { Link, useNavigate } from 'react-router-dom';
 
 

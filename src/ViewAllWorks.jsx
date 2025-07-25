@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './ViewAllWorks.css';
 import { Link } from 'react-router-dom';
 import FooterSection from "./FooterSection";
-import luvidlogo from './assets/LUVID-LOGO.png'
+import luvidlogo from './assets/LUVID-LOGO-W.png'
 import mistu from "./assets/Mistudiu.png"
 import pasunooti from './assets/Pasunooti.png'
 import psycho from './assets/CompetentPsychologist.png'
@@ -42,6 +42,34 @@ const ViewAllWorks = () => {
       link: 'https://deltadestination.com/'
     },
     {
+      image: oto,
+      alt: "Oto Gadgets",
+      title: "Oto Gadgets",
+      desc: "An automotive parts and accessories e-commerce platform. Features include product catalog, inventory management, and secure payment processing for automotive businesses.",
+      link: "https://otogadgets.com/"
+    },
+    {
+      image: tele,
+      alt: "Tele Ecommerce",
+      title: "Tele Ecommerce",
+      desc: "A telecommunications equipment and services marketplace. Features include product listings, service packages, and customer support integration for telecom businesses.",
+      link: "https://altelal.com/"
+    },
+    {
+      image: hrms,
+      alt: "HRMS",
+      title: "Hawaseeb Computers Ecomerce",
+      desc: "A comprehensive HR management platform for enterprises. Features include employee management, payroll processing, performance tracking, and recruitment tools.",
+      link: "https://hawaseebcomputers.com/"
+    },
+    {
+      image: deltamoscots,
+      alt: "Delta Moscots",
+      title: "Delta Moscots",
+      desc: "A creative design agency portfolio showcasing branding, web design, and digital marketing services. Features include project galleries, client testimonials, and service offerings.",
+      link: "https://deltamascots.com/"
+    },
+    {
       image: mistu,
       alt: "Mistudiu",
       title: "Mistudiu",
@@ -62,13 +90,7 @@ const ViewAllWorks = () => {
       desc: "A mental health platform connecting patients with licensed psychologists. Features include secure video consultations, appointment scheduling, and digital therapy resources.",
       link: "https://competentpsychologist.in/"
     },
-    {
-      image: deltamoscots,
-      alt: "Delta Moscots",
-      title: "Delta Moscots",
-      desc: "A creative design agency portfolio showcasing branding, web design, and digital marketing services. Features include project galleries, client testimonials, and service offerings.",
-      link: "https://deltamascots.com/"
-    },
+    
     {
       image: scraps,
       alt: "HM Scraps",
@@ -90,27 +112,7 @@ const ViewAllWorks = () => {
       desc: "A boutique hotel booking and management system. Features include room reservations, guest services, and property management tools for hospitality businesses.",
       link: "https://lakkidiinn.com/"
     },
-    {
-      image: oto,
-      alt: "Oto Gadgets",
-      title: "Oto Gadgets",
-      desc: "An automotive parts and accessories e-commerce platform. Features include product catalog, inventory management, and secure payment processing for automotive businesses.",
-      link: "https://otogadgets.com/"
-    },
-    {
-      image: tele,
-      alt: "Tele Ecommerce",
-      title: "Tele Ecommerce",
-      desc: "A telecommunications equipment and services marketplace. Features include product listings, service packages, and customer support integration for telecom businesses.",
-      link: "https://altelal.com/"
-    },
-    {
-      image: hrms,
-      alt: "HRMS",
-      title: "Hawaseeb Computers Ecomerce",
-      desc: "A comprehensive HR management platform for enterprises. Features include employee management, payroll processing, performance tracking, and recruitment tools.",
-      link: "https://hawaseebcomputers.com/"
-    },
+    
     // {
     //   image: stockflow,
     //   alt: "Stock Flow Product",
