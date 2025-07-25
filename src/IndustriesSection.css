@@ -42,6 +42,7 @@
   line-height: 1.13;
   width: 100%;
   box-sizing: border-box;
+  color: #111;
 }
 .industries-desc {
   font-size: 1rem;
@@ -109,6 +110,7 @@
   display: flex;
   align-items: flex-start;
   margin-top: 2px;
+  color: #111;
 }
 .industry-title {
   font-size: 1.35rem;
