@@ -38,74 +38,86 @@ const ViewAllWorks = () => {
       image: deltadestination,
       alt: "Delta Destinations",
       title: "Delta Destinations",
-      desc: "A comprehensive travel and tourism platform offering seamless booking experiences for destinations worldwide. Features include real-time availability, secure payments, and personalized travel recommendations."
+      desc: "A comprehensive travel and tourism platform offering seamless booking experiences for destinations worldwide. Features include real-time availability, secure payments, and personalized travel recommendations.",
+      link: 'https://deltadestination.com/'
     },
     {
       image: mistu,
       alt: "Mistudiu",
       title: "Mistudiu",
-      desc: "An innovative interior design platform connecting clients with professional designers. Features include project management, 3D visualization tools, and secure payment processing for design services."
+      desc: "An innovative interior design platform connecting clients with professional designers. Features include project management, 3D visualization tools, and secure payment processing for design services.",
+      link: 'https://mistudiu.com/'
     },
     {
       image: pasunooti,
       alt: "Pasunooti Hospitals",
       title: "Pasunooti Hospitals",
-      desc: "A comprehensive healthcare management system for hospitals and medical facilities. Includes patient management, appointment scheduling, medical records, and telemedicine capabilities."
+      desc: "A comprehensive healthcare management system for hospitals and medical facilities. Includes patient management, appointment scheduling, medical records, and telemedicine capabilities.",
+      link: 'https://pasunootihospitals.com/'
     },
     {
       image: psycho,
       alt: "Competent Psychologist",
       title: "Competent Psychologist",
-      desc: "A mental health platform connecting patients with licensed psychologists. Features include secure video consultations, appointment scheduling, and digital therapy resources."
+      desc: "A mental health platform connecting patients with licensed psychologists. Features include secure video consultations, appointment scheduling, and digital therapy resources.",
+      link: "https://competentpsychologist.in/"
     },
     {
       image: deltamoscots,
       alt: "Delta Moscots",
       title: "Delta Moscots",
-      desc: "A creative design agency portfolio showcasing branding, web design, and digital marketing services. Features include project galleries, client testimonials, and service offerings."
+      desc: "A creative design agency portfolio showcasing branding, web design, and digital marketing services. Features include project galleries, client testimonials, and service offerings.",
+      link: "https://deltamascots.com/"
     },
     {
       image: scraps,
       alt: "HM Scraps",
       title: "HM Scraps",
-      desc: "A waste management and recycling platform for businesses and municipalities. Features include waste tracking, recycling analytics, and sustainability reporting tools."
+      desc: "A waste management and recycling platform for businesses and municipalities. Features include waste tracking, recycling analytics, and sustainability reporting tools.",
+      link: "https://hmscraps.com/"
     },
     {
       image: innovect,
       alt: "Innovect.ae",
       title: "Innovect.ae",
-      desc: "A technology consulting and digital transformation platform. Offers services in cloud migration, AI implementation, and digital strategy for enterprise clients."
+      desc: "A technology consulting and digital transformation platform. Offers services in cloud migration, AI implementation, and digital strategy for enterprise clients.",
+      link: "https://innovect.ae/"
     },
     {
       image: lakkidi,
       alt: "Lakkidi Inn",
       title: "Lakkidi Inn",
-      desc: "A boutique hotel booking and management system. Features include room reservations, guest services, and property management tools for hospitality businesses."
+      desc: "A boutique hotel booking and management system. Features include room reservations, guest services, and property management tools for hospitality businesses.",
+      link: "https://lakkidiinn.com/"
     },
     {
       image: oto,
-      alt: "Oto Gadge",
-      title: "Oto Gadge",
-      desc: "An automotive parts and accessories e-commerce platform. Features include product catalog, inventory management, and secure payment processing for automotive businesses."
+      alt: "Oto Gadgets",
+      title: "Oto Gadgets",
+      desc: "An automotive parts and accessories e-commerce platform. Features include product catalog, inventory management, and secure payment processing for automotive businesses.",
+      link: "https://otogadgets.com/"
     },
     {
       image: tele,
       alt: "Tele Ecommerce",
       title: "Tele Ecommerce",
-      desc: "A telecommunications equipment and services marketplace. Features include product listings, service packages, and customer support integration for telecom businesses."
+      desc: "A telecommunications equipment and services marketplace. Features include product listings, service packages, and customer support integration for telecom businesses.",
+      link: "https://altelal.com/"
     },
     {
       image: hrms,
       alt: "HRMS",
-      title: "HRMS - Human Resource Management System",
-      desc: "A comprehensive HR management platform for enterprises. Features include employee management, payroll processing, performance tracking, and recruitment tools."
+      title: "Hawaseeb Computers Ecomerce",
+      desc: "A comprehensive HR management platform for enterprises. Features include employee management, payroll processing, performance tracking, and recruitment tools.",
+      link: "https://hawaseebcomputers.com/"
     },
-    {
-      image: stockflow,
-      alt: "Stock Flow Product",
-      title: "Stock Flow – Warehouse Inventory Management System",
-      desc: "A scalable solution for managing warehouse inventory across multiple stores. Features include real-time stock tracking, supplier management, invoice generation, and comprehensive financial reporting for medium to large-scale storage facilities."
-    }
+    // {
+    //   image: stockflow,
+    //   alt: "Stock Flow Product",
+    //   title: "Stock Flow – Warehouse Inventory Management System",
+    //   desc: "A scalable solution for managing warehouse inventory across multiple stores. Features include real-time stock tracking, supplier management, invoice generation, and comprehensive financial reporting for medium to large-scale storage facilities.",
+    //   link: "https://stockflow.com/"
+    // }
   ];
 
   const PROJECTS_PER_PAGE = 6;
@@ -203,18 +215,26 @@ const ViewAllWorks = () => {
           <h2 className="our-work-title">Our Work</h2>
           <div className="project-cards">
             {currentProjects.map((project, idx) => (
-              <div className="project-card" key={idx}>
-                <div className="laptop-container">
-                  <div className="laptop-screen">
-                    <img src={project.image} alt={project.alt} />
-                    
+              <a
+                key={idx}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card-link"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <div className="project-card">
+                  <div className="laptop-container">
+                    <div className="laptop-screen">
+                      <img src={project.image} alt={project.alt} />
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <h3 className="project-title">{project.title}</h3>
+                    <p className="project-desc">{project.desc}</p>
                   </div>
                 </div>
-                <div className="project-info">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-desc">{project.desc}</p>
-                </div>
-              </div>
+              </a>
             ))}
           </div>
           

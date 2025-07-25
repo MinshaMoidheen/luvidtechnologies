@@ -4,6 +4,7 @@ import './PortfolioSection.css';
 import { Link } from 'react-router-dom';
 import face from './assets/app_page.png'
 import tele from './assets/TelalEcommerce.png'
+import hrms from './assets/hrms.png'
 
 import stockflow from './assets/stockflow.png'
 
@@ -51,23 +52,39 @@ const projects = [
   {
     img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=600&h=400&facepad=2',
     alt: 'Project 4',
-    title: 'Project 4',
-    desc: 'Description for project 4.',
+    title: 'OCR AI Model – Optical Character Recognition',
+    desc: 'AI-based OCR engine that digitizes printed and handwritten content, streamlining data entry and document automation.',
     features: [
-      'Feature 1',
-      'Feature 2',
-      'Feature 3',
+      'Converts scanned text/images to structured data',
+      'Ideal for forms, handwritten notes, and physical documents',
+      'AI-enhanced accuracy and language support',
+      'Integrates into third-party platforms or ERPs'
+    ],
+  },
+  {
+    img: hrms,
+    alt: 'Project 5',
+    title: 'HRMS System – Human Resource & Payroll Management',
+    desc: 'An advanced HR Management platform built for enterprises to handle employee life cycles and salary processing.',
+    features: [
+      "Bulk salary processing for large teams",
+"PF, ESI, TDS, and Appraisal management",
+"	Leave, attendance, and role-based employee management",
+"	Secure and scalable architecture for HR departments"
+
     ],
   },
   {
     img: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=600&h=400&facepad=2',
     alt: 'Project 5',
-    title: 'Project 5',
-    desc: 'Description for project 5.',
+    title: 'OneForm – Embeddable Smart Form',
+    desc: 'A lightweight, customizable form module that can be embedded into any static or dynamic website, complete with admin panel.',
     features: [
-      'Feature 1',
-      'Feature 2',
-      'Feature 3',
+      "Easy plug-in to static or WordPress/HTML websites",
+"Admin dashboard for submissions and response tracking",
+"Custom fields, validations, and exportable reports",
+"Ideal for bookings, contact forms, job applications, etc."
+
     ],
   },
 ];

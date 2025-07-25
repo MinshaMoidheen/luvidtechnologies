@@ -14,17 +14,17 @@ const projects = [
   {
     title: 'Delta Destinations',
     img: deltadestination,
-    link: '#'
+    link: 'https://deltadestination.com/'
   },
   {
     title: 'Mistudiu',
     img: mistu,
-    link: '#'
+    link: 'https://mistudiu.com/'
   },
   {
     title: 'Pasunooti Hospitals',
     img: pasunooti,
-    link: '#'
+    link: 'https://pasunootihospitals.com/'
   },
 ];
 
