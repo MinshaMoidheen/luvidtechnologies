@@ -8,13 +8,25 @@ import InsightsSection from './InsightsSection';
 import TestimonialsSection from './TestimonialsSection';
 import FooterSection from './FooterSection';
 import ContactPage from './ContactPage';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import AboutUsPage from './AboutUsPage';
 import BlogPage from './BlogPage';
 import Works from './Works';
 import ViewAllWorks from './ViewAllWorks';
 import ServicePage from './ServicePage';
 import TestimonialPage from './TestimonialPage';
+
+// ScrollToTop component to scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function Home() {
   return (
@@ -36,6 +48,7 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
