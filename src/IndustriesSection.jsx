@@ -33,10 +33,15 @@ const IndustriesSection = () => (
         <button className="industries-btn">Know More <span className="industries-arrow">→</span></button>
       </div>
       <div className="industries-right">
-        {/* <div className="industries-arrows">
-          <button className="arrow-btn arrow-left"><FaArrowLeft /></button>
-          <button className="arrow-btn arrow-right"><FaArrowRight /></button>
+        {/* <div className="industries-navigation">
+          <button className="nav-arrow nav-arrow-left">
+            <FaArrowLeft size={20} />
+          </button>
+          <button className="nav-arrow nav-arrow-right">
+            <FaArrowRight size={20} />
+          </button>
         </div> */}
+        
         {industries.map((ind, idx) => (
           <div key={ind.title} className="industry-card">
             <div className="industry-icon">{ind.icon}</div>
