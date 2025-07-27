@@ -75,7 +75,7 @@
 .testimonial-card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
   width: 370px;
   min-height: 210px;
   display: flex;
@@ -89,9 +89,8 @@
 
 .testimonial-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
-
 
 .testimonial-text {
   font-size: 1.13rem;
@@ -157,7 +156,7 @@
   .testimonial-card {
     width: 360px;
     margin-left: 20px;
-   
+
     padding: 24px 12px 20px 12px;
   }
   .testimonial-card:hover {
@@ -167,11 +166,10 @@
     font-size: 1.7rem;
   }
   .testimonial1-title {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0 0 48px 0;
-  color: #111;
-  line-height: 1.13;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 48px 0;
+    color: #111;
+    line-height: 1.13;
+  }
 }
-
-} 
