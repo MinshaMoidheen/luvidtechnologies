@@ -111,6 +111,9 @@ const TestimonialPage = () => {
           <Link to="/services">
             <a href="#services">Services</a>
           </Link>
+          <Link to="/allindustries">
+            <a>Industries</a>
+          </Link>
           <Link to="/works">
             <a>Products</a>
           </Link>
@@ -192,7 +195,10 @@ const TestimonialPage = () => {
         animate={inView ? "visible" : "hidden"}
       >
         <div className="testimonials-container">
-          <motion.div className="testimonials-grid" variants={containerVariants}>
+          <motion.div
+            className="testimonials-grid"
+            variants={containerVariants}
+          >
             {testimonials.map((testimonial, index) => (
               <motion.div
                 className="testimonial-card"
@@ -219,7 +225,9 @@ const TestimonialPage = () => {
                   <motion.div
                     className="testimonial-info"
                     initial={{ x: -20, opacity: 0 }}
-                    animate={inView ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }}
+                    animate={
+                      inView ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }
+                    }
                     transition={{ delay: index * 0.2 + 0.4, duration: 0.5 }}
                   >
                     <h3 className="testimonial-name">{testimonial.name}</h3>

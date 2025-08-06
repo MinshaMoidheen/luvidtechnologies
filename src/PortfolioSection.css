@@ -28,8 +28,8 @@
 
 .portfolio-header-row {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   max-width: 1400px;
   margin: 0 auto 3rem auto;
   padding: 0 5%;
@@ -40,8 +40,9 @@
 .portfolio-header-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
+  text-align: center;
 }
 
 .portfolio-badge {
@@ -91,7 +92,7 @@
   margin: 0;
   line-height: 1.13;
   color: #fff;
-  text-align: left;
+  text-align: center;
   background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -461,7 +462,7 @@
 
   .portfolio-header-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.5rem;
     padding: 0 3%;
     margin: 0 auto 2rem auto;
@@ -469,6 +470,8 @@
 
   .portfolio-header-left {
     gap: 1rem;
+    align-items: center;
+    text-align: center;
   }
 
   .portfolio-badge {
@@ -478,10 +481,11 @@
 
   .portfolio-title {
     font-size: 2.25rem;
+    text-align: center;
   }
 
   .portfolio-btn {
-    align-self: flex-start;
+    align-self: center;
     padding: 0.75rem 1.5rem;
     font-size: 0.95rem;
   }
@@ -501,19 +505,26 @@
 
   .portfolio-header-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.25rem;
     padding: 0 2%;
     margin: 0 auto 1.5rem auto;
   }
 
+  .portfolio-header-left {
+    align-items: center;
+    text-align: center;
+  }
+
   .portfolio-title {
     font-size: 2rem;
+    text-align: center;
   }
 
   .portfolio-btn {
     padding: 0.625rem 1.25rem;
     font-size: 0.9rem;
+    align-self: center;
   }
 
   .portfolio-card-content {
@@ -522,6 +533,17 @@
 
   .portfolio-img {
     height: 180px;
+  }
+
+  .portfolio-pagination {
+    margin-top: 1.75rem;
+    gap: 0.75rem;
+  }
+
+  .dot {
+    width: 38px;
+    height: 38px;
+    font-size: 0.85rem;
   }
 }
 
@@ -539,19 +561,26 @@
 
   .portfolio-header-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     padding: 0 2%;
     margin: 0 auto 1.5rem auto;
   }
 
+  .portfolio-header-left {
+    align-items: center;
+    text-align: center;
+  }
+
   .portfolio-title {
     font-size: 1.75rem;
+    text-align: center;
   }
 
   .portfolio-btn {
     padding: 0.625rem 1.25rem;
     font-size: 0.9rem;
+    align-self: center;
   }
 
   .portfolio-card {
@@ -574,6 +603,17 @@
   .portfolio-img {
     height: 200px;
   }
+
+  .portfolio-pagination {
+    margin-top: 1.5rem;
+    gap: 0.75rem;
+  }
+
+  .dot {
+    width: 36px;
+    height: 36px;
+    font-size: 0.8rem;
+  }
 }
 
 /* Small Mobile (320px - 479px) */
@@ -590,19 +630,26 @@
 
   .portfolio-header-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.75rem;
     padding: 0 1.5%;
     margin: 0 auto 1.25rem auto;
   }
 
+  .portfolio-header-left {
+    align-items: center;
+    text-align: center;
+  }
+
   .portfolio-title {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .portfolio-btn {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
+    align-self: center;
   }
 
   .portfolio-card {
@@ -628,12 +675,13 @@
 
   .portfolio-pagination {
     margin-top: 1.25rem;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   .dot {
-    width: 10px;
-    height: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
   }
 }
 
@@ -650,17 +698,26 @@
   }
 
   .portfolio-header-row {
+    flex-direction: column;
+    align-items: center;
     padding: 0 1%;
     margin: 0 auto 1rem auto;
   }
 
+  .portfolio-header-left {
+    align-items: center;
+    text-align: center;
+  }
+
   .portfolio-title {
     font-size: 1.25rem;
+    text-align: center;
   }
 
   .portfolio-btn {
     padding: 0.375rem 0.75rem;
     font-size: 0.8rem;
+    align-self: center;
   }
 
   .portfolio-card-content {
@@ -677,5 +734,16 @@
 
   .portfolio-img {
     height: 140px;
+  }
+
+  .portfolio-pagination {
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .dot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
   }
 }

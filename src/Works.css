@@ -1,19 +1,19 @@
-.about-hero{
+.about-hero {
   display: block;
   height: 450px;
 }
 
-.about-breadcrumb{
+.about-breadcrumb {
   margin-left: 50px;
   margin-bottom: 50px;
 }
 
-.portfolio-badge-btn{
+.portfolio-badge-btn {
   margin-top: 40px;
   margin: 0 0 0 0;
 }
 
-.portfolio-title{
+.portfolio-title {
   font-size: 2.6rem;
   margin-top: 0;
   text-align: center;
@@ -21,22 +21,18 @@
   margin-bottom: 10px;
 }
 
-.about-hero-content{
-align-items: center;
-text-align: center;
+.about-hero-content {
+  align-items: center;
+  text-align: center;
 }
 
-
-.about-desc-div{
-
- 
+.about-desc-div {
   margin-left: 23%;
   margin-right: 23%;
   align-items: flex-start;
 }
 
-
-.portfolio-desc{
+.portfolio-desc {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 15px;
@@ -57,12 +53,12 @@ text-align: center;
 }
 
 .portfolio-product-section {
-  background: white; 
+  background: white;
   padding: 40px 0;
 }
 
-.section2{
-   background: #f5f5f5; /* light grey */
+.section2 {
+  background: #f5f5f5; /* light grey */
 }
 
 .portfolio-product-container {
@@ -78,7 +74,7 @@ text-align: center;
   width: 500px;
   max-width: 100%;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   height: 410px;
   margin-top: 30px;
 }
@@ -86,7 +82,6 @@ text-align: center;
 .portfolio-product-details {
   flex: 1;
   margin-top: 0;
- 
 }
 
 .portfolio-product-details h2 {
@@ -220,7 +215,7 @@ text-align: center;
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 2px;
@@ -366,79 +361,75 @@ text-align: center;
   .hero-nav {
     display: none;
   }
-  
+
   .contact-btn {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: block;
   }
 
-
-  .portfolio-title{
+  .portfolio-title {
     font-size: 1.5rem;
   }
 
-  .portfolio-desc{
+  .portfolio-desc {
     font-size: 1rem;
   }
 
-  .about-breadcrumb{
+  .about-breadcrumb {
     margin-left: 20px;
   }
-  
+
   .portfolio-product-container {
     flex-direction: column;
     align-items: center;
     gap: 24px;
     padding: 0 16px;
   }
-  
+
   .portfolio-product-image {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  
+
   .portfolio-product-image img {
     width: 100%;
     max-width: 400px;
     height: auto;
     margin-top: 0;
   }
-  
+
   .portfolio-product-details {
     width: 100%;
     text-align: center;
   }
-  
+
   .portfolio-product-details h2 {
     font-size: 1.8rem;
     margin-bottom: 16px;
   }
-  
+
   .portfolio-product-details p {
     font-size: 1rem;
     margin-bottom: 20px;
   }
-  
+
   .portfolio-product-details h3 {
     font-size: 1.1rem;
     margin-bottom: 12px;
   }
-  
+
   .portfolio-product-details ul {
     text-align: left;
     max-width: 500px;
     margin: 0 auto;
   }
-  
+
   .portfolio-product-details li {
     font-size: 0.95rem;
     margin-bottom: 8px;
   }
 }
-
-
-

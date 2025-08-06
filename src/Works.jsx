@@ -9,12 +9,19 @@ import hrms from "./assets/hrms.png";
 import tele from "./assets/TelalEcommerce.png";
 import oneForm from "./assets/one-form.png";
 import ocrModel from "./assets/ocr_model.png";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const PRODUCTS_PER_PAGE = 3;
 
 const Works = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [heroRef, heroInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,6 +29,48 @@ const Works = () => {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  // Animation variants
+  const headerVariants = {
+    hidden: { y: -50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const heroContentVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.2,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const heroItemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const logoVariants = {
+    hidden: { scale: 0.8, opacity: 0, rotate: -10 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      rotate: 0,
+      transition: { duration: 1, delay: 0.5, ease: "easeOut" },
+    },
   };
 
   const productSections = [
@@ -117,7 +166,12 @@ const Works = () => {
   return (
     <>
       {/* Header/Navbar for Works Page */}
-      <header className="hero-header">
+      <motion.header
+        className="hero-header"
+        variants={headerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <Link to="/">
           <img src={luvidlogo} alt="luvid-logo" />
         </Link>
@@ -125,16 +179,19 @@ const Works = () => {
         <nav className="hero-nav">
           <a href="/">Home</a>
           <Link to="/about">
-            <a href="#about">About</a>
+            <span>About</span>
           </Link>
           <Link to="/services">
-            <a href="#services">Services</a>
+            <span>Services</span>
+          </Link>
+          <Link to="/allindustries">
+            <span>Industries</span>
           </Link>
           <Link to="/works">
-            <a>Products</a>
+            <span>Products</span>
           </Link>
           <Link to="/blog">
-            <a href="#blogs">Blogs</a>
+            <span>Blogs</span>
           </Link>
           <a href="/testimonial">Testimonials</a>
           {/* <a href="#careers">Careers</a> */}
@@ -147,7 +204,7 @@ const Works = () => {
         <button className="mobile-menu-btn" onClick={toggleMenu}>
           <span className={`hamburger ${isMenuOpen ? "active" : ""}`}></span>
         </button>
-      </header>
+      </motion.header>
 
       {/* Mobile Side Menu */}
       <div
@@ -166,16 +223,16 @@ const Works = () => {
             Home
           </a>
           <Link to="/about" onClick={closeMenu}>
-            <a href="#about">About</a>
+            <span>About</span>
           </Link>
           <a href="/services" onClick={closeMenu}>
             Services
           </a>
           <Link to="/works" onClick={closeMenu}>
-            <a>Products</a>
+            <span>Products</span>
           </Link>
           <Link to="/blog" onClick={closeMenu}>
-            <a href="#blogs">Blogs</a>
+            <span>Blogs</span>
           </Link>
           <a href="/testimonial" onClick={closeMenu}>
             Testimonials
@@ -189,22 +246,67 @@ const Works = () => {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section className="about-hero">
-        <div className="about-breadcrumb">
+      {/* Hero Section - Matching Services and Industries page style */}
+      <motion.section
+        className="works-hero"
+        ref={heroRef}
+        variants={heroContentVariants}
+        initial="hidden"
+        animate={heroInView ? "visible" : "hidden"}
+      >
+        <motion.div className="allworks-breadcrumb" variants={heroItemVariants}>
           Home / <b>Portfolio</b>
-        </div>
-        <div className="about-hero-content">
-          <button className="portfolio-badge-btn">Portfolio</button>
-          <h1 className="portfolio-title">
-            Company Solutions & Product <br /> Portfolio <br />
-            <p className="portfolio-desc">
+        </motion.div>
+        <div className="workimage">
+          <motion.div
+            className="works-hero-content"
+            variants={heroItemVariants}
+          >
+            <motion.button
+              className="works-badge-btn"
+              variants={heroItemVariants}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+            >
+              Our Portfolio
+            </motion.button>
+            <motion.h1
+              className="works-title"
+              variants={heroItemVariants}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              Company Solutions &
+              <br />
+              Product Portfolio
+            </motion.h1>
+            <motion.p
+              className="works-desc"
+              variants={heroItemVariants}
+              whileHover={{ scale: 1.01 }}
+              transition={{ duration: 0.3 }}
+            >
               Discover our innovations in analytics-driven applications and let
-              it drive new utilities for your organisation workflow.
-            </p>
-          </h1>
+              it drive new utilities for your organisation workflow. Our
+              portfolio showcases cutting-edge solutions that transform
+              businesses and drive digital transformation.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            className="about-hero-logo-bg"
+            variants={logoVariants}
+            whileHover={{
+              scale: 1.1,
+              rotate: 5,
+              transition: { duration: 0.3 },
+            }}
+          >
+            <img src={luvidlogo} alt="" />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {currentProducts.map((product, idx) => (
         <section

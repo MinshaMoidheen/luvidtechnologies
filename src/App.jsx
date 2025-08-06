@@ -38,7 +38,7 @@ const ScrollToTopButton = () => {
 
   useEffect(() => {
     let ticking = false;
-    
+
     const toggleVisibility = () => {
       if (!ticking) {
         requestAnimationFrame(() => {

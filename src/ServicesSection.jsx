@@ -172,6 +172,7 @@ const ServicesSection = () => {
 
   return (
     <motion.section
+      id="services"
       className="services-root"
       ref={ref}
       variants={containerVariants}

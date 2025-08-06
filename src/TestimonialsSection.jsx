@@ -103,7 +103,9 @@ const TestimonialCard = ({ testimonial, index }) => {
           <div className="testimonial-role">{testimonial.title}</div>
           <div className="testimonial-rating">
             {[...Array(5)].map((_, i) => (
-              <span key={i} className="star">★</span>
+              <span key={i} className="star">
+                ★
+              </span>
             ))}
           </div>
         </motion.div>
@@ -166,6 +168,7 @@ const TestimonialsSection = () => {
 
   return (
     <motion.section
+      id="testimonials"
       className="testimonials-root"
       ref={ref}
       variants={containerVariants}

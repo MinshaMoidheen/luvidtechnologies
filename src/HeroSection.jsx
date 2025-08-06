@@ -8,12 +8,6 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import luvidlogo from "./assets/LUVID-LOGO.png";
-import bannerImage from "./assets/banner.jpg";
-import appPageImage from "./assets/ai_attendance.png";
-import stockflowImage from "./assets/stockflow.png";
-import hrmsImage from "./assets/hrms.png";
-import deltadestinationImage from "./assets/deltadestination.png";
-import otoGadgeImage from "./assets/OtoGadge.png";
 import teamImg from "./assets/team-img.png";
 import hrmsImg from "./assets/hrms-img.png";
 import ecomImg from "./assets/ecom-img.png";
@@ -75,7 +69,7 @@ const Header = () => {
         <nav className="hero-nav">
           <motion.div variants={navItemVariants}>
             <Link to="/">
-              <motion.a
+              <motion.span
                 whileHover={{
                   y: -1,
                   color: "#000",
@@ -84,12 +78,12 @@ const Header = () => {
                 transition={{ duration: 0.2 }}
               >
                 Home
-              </motion.a>
+              </motion.span>
             </Link>
           </motion.div>
           <motion.div variants={navItemVariants}>
             <Link to="/about">
-              <motion.a
+              <motion.span
                 whileHover={{
                   y: -1,
                   color: "#000",
@@ -98,12 +92,12 @@ const Header = () => {
                 transition={{ duration: 0.2 }}
               >
                 About
-              </motion.a>
+              </motion.span>
             </Link>
           </motion.div>
           <motion.div variants={navItemVariants}>
             <Link to="/services">
-              <motion.a
+              <motion.span
                 whileHover={{
                   y: -1,
                   color: "#000",
@@ -112,12 +106,26 @@ const Header = () => {
                 transition={{ duration: 0.2 }}
               >
                 Services
-              </motion.a>
+              </motion.span>
+            </Link>
+          </motion.div>
+          <motion.div variants={navItemVariants}>
+            <Link to="/allindustries">
+              <motion.span
+                whileHover={{
+                  y: -1,
+                  color: "#000",
+                  transition: { duration: 0.2 },
+                }}
+                transition={{ duration: 0.2 }}
+              >
+                Industries
+              </motion.span>
             </Link>
           </motion.div>
           <motion.div variants={navItemVariants}>
             <Link to="/works">
-              <motion.a
+              <motion.span
                 whileHover={{
                   y: -1,
                   color: "#000",
@@ -126,12 +134,12 @@ const Header = () => {
                 transition={{ duration: 0.2 }}
               >
                 Products
-              </motion.a>
+              </motion.span>
             </Link>
           </motion.div>
           <motion.div variants={navItemVariants}>
             <Link to="/blog">
-              <motion.a
+              <motion.span
                 whileHover={{
                   y: -1,
                   color: "#000",
@@ -140,12 +148,12 @@ const Header = () => {
                 transition={{ duration: 0.2 }}
               >
                 Blogs
-              </motion.a>
+              </motion.span>
             </Link>
           </motion.div>
           <motion.div variants={navItemVariants}>
             <Link to="/testimonial">
-              <motion.a
+              <motion.span
                 whileHover={{
                   y: -1,
                   color: "#000",
@@ -154,7 +162,7 @@ const Header = () => {
                 transition={{ duration: 0.2 }}
               >
                 Testimonials
-              </motion.a>
+              </motion.span>
             </Link>
           </motion.div>
         </nav>
@@ -198,7 +206,7 @@ const Header = () => {
               transition={{ duration: 0.2 }}
             />
             <motion.div
-              className="mobile-menu"
+              className={`mobile-menu ${isMenuOpen ? "active" : ""}`}
               initial={{ x: 200 }}
               animate={{ x: 0 }}
               exit={{ x: 200 }}
@@ -217,9 +225,9 @@ const Header = () => {
                   transition={{ delay: 0 * 0.05, duration: 0.2 }}
                 >
                   <Link to="/" onClick={closeMenu}>
-                    <motion.a whileHover={{ x: 5, color: "#000" }}>
+                    <motion.span whileHover={{ x: 5, color: "#000" }}>
                       Home
-                    </motion.a>
+                    </motion.span>
                   </Link>
                 </motion.div>
                 <motion.div
@@ -228,9 +236,9 @@ const Header = () => {
                   transition={{ delay: 1 * 0.05, duration: 0.2 }}
                 >
                   <Link to="/about" onClick={closeMenu}>
-                    <motion.a whileHover={{ x: 5, color: "#000" }}>
+                    <motion.span whileHover={{ x: 5, color: "#000" }}>
                       About
-                    </motion.a>
+                    </motion.span>
                   </Link>
                 </motion.div>
                 <motion.div
@@ -239,9 +247,9 @@ const Header = () => {
                   transition={{ delay: 2 * 0.05, duration: 0.2 }}
                 >
                   <Link to="/services" onClick={closeMenu}>
-                    <motion.a whileHover={{ x: 5, color: "#000" }}>
+                    <motion.span whileHover={{ x: 5, color: "#000" }}>
                       Services
-                    </motion.a>
+                    </motion.span>
                   </Link>
                 </motion.div>
                 <motion.div
@@ -249,10 +257,21 @@ const Header = () => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 3 * 0.05, duration: 0.2 }}
                 >
+                  <Link to="/allindustries" onClick={closeMenu}>
+                    <motion.span whileHover={{ x: 5, color: "#000" }}>
+                      Industries
+                    </motion.span>
+                  </Link>
+                </motion.div>
+                <motion.div
+                  initial={{ x: 30, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 4 * 0.05, duration: 0.2 }}
+                >
                   <Link to="/works" onClick={closeMenu}>
-                    <motion.a whileHover={{ x: 5, color: "#000" }}>
+                    <motion.span whileHover={{ x: 5, color: "#000" }}>
                       Products
-                    </motion.a>
+                    </motion.span>
                   </Link>
                 </motion.div>
                 <motion.div
@@ -261,9 +280,9 @@ const Header = () => {
                   transition={{ delay: 4 * 0.05, duration: 0.2 }}
                 >
                   <Link to="/blog" onClick={closeMenu}>
-                    <motion.a whileHover={{ x: 5, color: "#000" }}>
+                    <motion.span whileHover={{ x: 5, color: "#000" }}>
                       Blogs
-                    </motion.a>
+                    </motion.span>
                   </Link>
                 </motion.div>
                 <motion.div
@@ -272,9 +291,9 @@ const Header = () => {
                   transition={{ delay: 5 * 0.05, duration: 0.2 }}
                 >
                   <Link to="/testimonial" onClick={closeMenu}>
-                    <motion.a whileHover={{ x: 5, color: "#000" }}>
+                    <motion.span whileHover={{ x: 5, color: "#000" }}>
                       Testimonials
-                    </motion.a>
+                    </motion.span>
                   </Link>
                 </motion.div>
               </nav>
@@ -303,33 +322,44 @@ const HeroCarousel = () => {
       src: teamImg,
       alt: "Team collaboration in modern office",
       title: "Innovative Team Collaboration",
+      description:
+        "Empowering teams with cutting-edge collaboration tools for enhanced productivity.",
     },
     {
       src: mobileappImg,
       alt: "Mobile app development showcase",
       title: "Mobile App Excellence",
+      description:
+        "Crafting intuitive mobile experiences that users love and businesses rely on.",
     },
     {
       src: wmsImg,
       alt: "Stock management system interface",
       title: "Advanced Stock Management",
+      description:
+        "Revolutionizing inventory control with advanced warehouse management systems.",
     },
     {
       src: hrmsImg,
       alt: "HR management system dashboard",
       title: "HR Management Solutions",
+      description:
+        "Streamlining human resources with comprehensive HRMS platforms.",
     },
     {
       src: travelImg,
       alt: "Delta destination project",
       title: "Travel & Tourism Solutions",
+      description:
+        "Transforming the travel industry with innovative booking platforms.",
     },
     {
       src: ecomImg,
       alt: "OtoGadge project",
       title: "E-commerce Excellence",
+      description:
+        "Building powerful e-commerce platforms that drive sales and scale growth.",
     },
-  
   ];
 
   return (
@@ -355,9 +385,7 @@ const HeroCarousel = () => {
             <div className="hero-carousel-overlay">
               <div className="hero-carousel-content">
                 <h3 className="hero-carousel-title">{image.title}</h3>
-                <p className="hero-carousel-description">
-                  Delivering cutting-edge solutions for modern businesses
-                </p>
+                <p className="hero-carousel-description">{image.description}</p>
               </div>
             </div>
           </SwiperSlide>

@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.breadcrumbcontact{
+.breadcrumbcontact {
   margin-left: 30px;
   margin-top: 80px;
   color: #000;
@@ -24,7 +24,7 @@
 .contact-left {
   flex: 1 1 0;
   min-width: 0;
-  padding: 48px 48px 0 48px;
+  padding: 48px 5% 0 5%;
 }
 
 .contact-breadcrumb {
@@ -34,35 +34,44 @@
 }
 
 .contact-badge-btn {
-  background: #e0e0e0;
-  color: #222;
+  background: #000;
+  color: #fff;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   border: none;
   border-radius: 12px;
-  padding: 10px 25px;
+  padding: 12px 28px;
   margin-top: 30px;
   margin-bottom: 0;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  transition: background 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.contact-badge-btn:hover {
+  background: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 /* .contact-badge-btn:hover {
   background: #d1d1d1;
 } */
 
 .contact-title {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 600;
   margin-top: 10px;
   margin-bottom: 18px;
-  line-height: 1.1;
+  line-height: 1.2;
+  color: #000;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 .contact-desc {
-  font-size: 1.13rem;
-  color: #222;
+  font-size: 1.1rem;
+  color: #555;
   margin-bottom: 36px;
+  line-height: 1.7;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 .contact-divider {
@@ -84,13 +93,17 @@
   gap: 4px;
 }
 .contact-info-label {
-  font-size: 1.01rem;
-  color: #000;
-  margin-bottom: 2px;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-family: "Inter", Arial, sans-serif;
 }
 .contact-info-value {
-  font-size: 1.25rem;
-  color: #111;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 600;
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -99,7 +112,7 @@
   flex: 1 1 0;
   min-width: 0;
   margin-top: 100px;
-  padding: 48px 48px 0 48px;
+  padding: 48px 5% 0 5%;
 }
 
 .contact-tabs {
@@ -109,17 +122,23 @@
   border-bottom: 2.5px solid #eee;
 }
 .contact-tab {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #111;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
   padding: 0 0 12px 0;
   cursor: pointer;
-  border-bottom: 3.5px solid transparent;
-  transition: border 0.2s, color 0.2s;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.contact-tab:hover {
+  color: #333;
 }
 .contact-tab.active {
-  border-bottom: 3.5px solid #111;
-  color: #111;
+  border-bottom: 2px solid #000;
+  color: #000;
 }
 
 .contact-form {
@@ -139,25 +158,32 @@
   gap: 8px;
 }
 .contact-form-group label {
-  font-size: 1.13rem;
-  color: #222;
+  font-size: 0.9rem;
+  color: #333;
   font-weight: 600;
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .contact-form-group input,
 .contact-form-group textarea {
-  font-size: 1.18rem;
+  font-size: 1rem;
   padding: 14px 16px;
-  border: 2px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
   outline: none;
-  background: #fafafa;
-  color: #111;
-  transition: border 0.2s;
+  background: #fff;
+  color: #333;
+  transition: all 0.3s ease;
   resize: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-family: "Inter", Arial, sans-serif;
 }
 .contact-form-group input:focus,
 .contact-form-group textarea:focus {
-  border: 2px solid #111;
+  border: 1px solid #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
 }
 .contact-form-group textarea {
   min-height: 90px;
@@ -180,7 +206,7 @@
   justify-content: space-between;
   padding: 0 48px;
   height: 84px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 .contact-logo {
   font-weight: bold;
@@ -221,8 +247,8 @@
 
 .location-section {
   width: 100vw;
-  background: #fafafa;
-  padding: 64px 0 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 60px 20px 60px 20px;
   display: flex;
   justify-content: center;
 }
@@ -235,6 +261,9 @@
   max-width: 1100px;
   width: 90vw;
   margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  background: #fff;
 }
 
 .location-image {
@@ -247,18 +276,17 @@
 }
 .location-image img {
   width: 100%;
-  height: 340px;
+  height: 100%;
   min-height: 340px;
-  max-height: 420px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
   display: block;
 }
 
 .location-info {
   flex: 0 0 60%;
   width: 60%;
-  padding: 0px 40px 40px 40px;
+  padding: 48px 48px 48px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,6 +295,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #000;
 }
 .location-divider {
   border: none;
@@ -277,6 +306,7 @@
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 8px;
+  color: #000;
 }
 .location-address {
   font-size: 1.1rem;
@@ -291,16 +321,19 @@
   color: #fff;
   border: none;
   border-radius: 14px;
-  padding: 12px 28px;
+  padding: 14px 32px;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.2s;
-  margin-top: 8px;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .location-btn:hover {
   background: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 .location-btn .arrow {
   font-size: 1.3em;
@@ -321,19 +354,24 @@
   background: #000;
   color: #fff;
   border: none;
-  border-radius: 14px;
-  padding: 12px 30px;
+  border-radius: 8px;
+  padding: 14px 28px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
+  font-family: "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .contact-send-btn:hover {
   background: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 .contact-send-btn .arrow {
   font-size: 1.3em;
@@ -350,8 +388,9 @@
     flex-direction: column;
     width: 100vw;
   }
-  .contact-left, .contact-right {
-    padding: 24px 12px 0 12px;
+  .contact-left,
+  .contact-right {
+    padding: 24px 5% 0 5%;
   }
   .contact-title {
     font-size: 1.7rem;
@@ -368,7 +407,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    padding: 0 12px;
+    padding: 0 5%;
     gap: 12px;
   }
   .contact-nav {
@@ -386,7 +425,8 @@
     max-width: 98vw;
     width: 98vw;
   }
-  .location-image, .location-info {
+  .location-image,
+  .location-info {
     width: 100%;
     flex: 1 1 100%;
   }
@@ -409,7 +449,6 @@
 
   .location-name {
     color: #000;
-    
   }
 
   .contact-send-btn-row {
@@ -445,7 +484,7 @@
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 2px;
@@ -591,22 +630,20 @@
   .hero-nav {
     display: none;
   }
-  
+
   .contact-btn {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: block;
   }
 
   .location-title {
     color: #000;
-    
   }
 
   .location-name {
     color: #000;
-    
   }
-} 
+}

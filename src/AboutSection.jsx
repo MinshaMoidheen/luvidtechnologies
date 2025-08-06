@@ -151,6 +151,7 @@ const AboutSection = () => {
 
   return (
     <motion.section
+      id="about"
       className="about-hero-root"
       ref={ref}
       variants={containerVariants}
