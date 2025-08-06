@@ -16,7 +16,7 @@ const FooterSection = () => (
     <div className="footer-bottom">
       <div className="footer-col">
         <div className="footer-col-title">Company</div>
-        <Link to="/aboutus"><a href="#">About</a></Link>
+                    <Link to="/about"><a href="#">About</a></Link>
         <Link to="/services"><a href="#">Services</a></Link>
         <Link to="/allworks"><a href="#">Works</a></Link>
         <Link to="/blog"><a href="#">Blogs</a></Link>
@@ -35,7 +35,7 @@ const FooterSection = () => (
       <div className="footer-col">
         <div className="footer-col-title">Products</div>
         <a href="#">HRMS</a>
-        <a href="#">Stock Flow</a>
+        <a href="#">Stocksigo</a>
         <a href="#">Facial Recognition Attendance System</a>
       </div>
       <div className="footer-col">

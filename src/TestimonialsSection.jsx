@@ -7,25 +7,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { Link } from "react-router-dom";
+import userLogo from "./assets/user-logo.svg";
 
 const testimonials = [
   {
-    text: '"What I am primarily looking for with new projects is a fit on both a visual and aesthetic level as well as on a personal level with the client."',
-    name: "Mohima Ale",
-    title: "App Developer, India",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    text: '"Luvid Technologies transformed our automotive e-commerce platform with their innovative development approach. The team delivered a seamless user experience that significantly increased our sales and customer satisfaction."',
+    name: "Muhammed Ali Ambalathumkandi",
+    title: "Founder, Oto Gadgets",
   },
   {
-    text: '"What I am primarily looking for with new projects is a fit on both a visual and aesthetic level as well as on a personal level with the client."',
-    name: "Dr Aneesh",
-    title: "Founder Cutopia India",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    text: '"The hospital management system developed by Luvid has streamlined our entire operations. Their attention to detail and understanding of healthcare workflows made the implementation smooth and efficient."',
+    name: "Dr Abhilash",
+    title: "Founder, Pasunooti Hospitals",
   },
   {
-    text: '"What I am primarily looking for with new projects is a fit on both a visual and aesthetic level as well as on a personal level with the client."',
-    name: "Ana Alsharari",
-    title: "CEO and Co-Owner at Perle",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    text: '"Luvid\'s stock management solution has revolutionized how we handle inventory. The real-time tracking and automated alerts have saved us countless hours and reduced errors significantly."',
+    name: "Nabeel",
+    title: "Founder, Stocksigo",
   },
 ];
 
@@ -83,18 +81,10 @@ const TestimonialCard = ({ testimonial, index }) => {
       }}
       whileTap={{ scale: 0.98 }}
     >
-      <motion.div
-        className="testimonial-text"
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-        transition={{ delay: index * 0.2 + 0.2, duration: 0.5 }}
-      >
-        {testimonial.text}
-      </motion.div>
-      <div className="testimonial-user-row">
+      <div className="testimonial-header">
         <motion.img
-          src={testimonial.img}
-          alt={testimonial.name}
+          src={userLogo}
+          alt="User"
           className="testimonial-avatar"
           variants={avatarVariants}
           whileHover={{
@@ -104,14 +94,28 @@ const TestimonialCard = ({ testimonial, index }) => {
           }}
         />
         <motion.div
+          className="testimonial-info"
           initial={{ x: -20, opacity: 0 }}
           animate={inView ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }}
           transition={{ delay: index * 0.2 + 0.4, duration: 0.5 }}
         >
           <div className="testimonial-name">{testimonial.name}</div>
-          <div className="testimonial1-title">{testimonial.title}</div>
+          <div className="testimonial-role">{testimonial.title}</div>
+          <div className="testimonial-rating">
+            {[...Array(5)].map((_, i) => (
+              <span key={i} className="star">★</span>
+            ))}
+          </div>
         </motion.div>
       </div>
+      <motion.div
+        className="testimonial-text"
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ delay: index * 0.2 + 0.2, duration: 0.5 }}
+      >
+        {testimonial.text}
+      </motion.div>
     </motion.div>
   );
 };
@@ -197,7 +201,7 @@ const TestimonialsSection = () => {
             autoplay={{ delay: 3500, disableOnInteraction: false }}
             speed={900}
           >
-            {testimonials.map((t, idx) => (
+            {testimonials.slice(0, 3).map((t, idx) => (
               <SwiperSlide key={idx}>
                 <TestimonialCard testimonial={t} index={idx} />
               </SwiperSlide>

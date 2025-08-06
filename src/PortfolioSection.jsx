@@ -5,16 +5,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./PortfolioSection.css";
 import { Link } from "react-router-dom";
-import face from "./assets/app_page.png";
+import face from "./assets/ai_attendance.png";
 import tele from "./assets/TelalEcommerce.png";
 import hrms from "./assets/hrms.png";
 import stockflow from "./assets/stockflow.png";
-
+import oneForm from "./assets/one-form.png";
+import ocrModel from "./assets/ocr_model.png";
 const projects = [
   {
     img: stockflow,
-    alt: "Stock Flow – Warehouse Inventory Management System",
-    title: "Stock Flow – Warehouse Inventory Management System",
+    alt: "Stocksigo – Warehouse Inventory Management System",
+    title: "Stocksigo – Warehouse Inventory Management System",
     desc: "A scalable solution for managing warehouse inventory across multiple stores. Ideal for medium to large-scale in-house storage facilities.",
     features: [
       "Multi-store & multi-user support with role-based access",
@@ -22,6 +23,18 @@ const projects = [
       "Supplier tracking with transaction and due management",
       "Invoice generation and detailed financial reporting",
       "Comprehensive dashboard for profit and monthly cash flow insights",
+    ],
+  },
+  {
+    img: hrms,
+    alt: "Project 5",
+    title: "HRMS System – Human Resource & Payroll Management",
+    desc: "An advanced HR Management platform built for enterprises to handle employee life cycles and salary processing.",
+    features: [
+      "Bulk salary processing for large teams",
+      "PF, ESI, TDS, and Appraisal management",
+      "Leave, attendance, and role-based employee management",
+      "Secure and scalable architecture for HR departments",
     ],
   },
   {
@@ -50,7 +63,7 @@ const projects = [
   },
   // Add more projects for demo
   {
-    img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=600&h=400&facepad=2",
+    img: ocrModel,
     alt: "Project 4",
     title: "OCR AI Model – Optical Character Recognition",
     desc: "AI-based OCR engine that digitizes printed and handwritten content, streamlining data entry and document automation.",
@@ -62,19 +75,7 @@ const projects = [
     ],
   },
   {
-    img: hrms,
-    alt: "Project 5",
-    title: "HRMS System – Human Resource & Payroll Management",
-    desc: "An advanced HR Management platform built for enterprises to handle employee life cycles and salary processing.",
-    features: [
-      "Bulk salary processing for large teams",
-      "PF, ESI, TDS, and Appraisal management",
-      "Leave, attendance, and role-based employee management",
-      "Secure and scalable architecture for HR departments",
-    ],
-  },
-  {
-    img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=600&h=400&facepad=2",
+    img: oneForm,
     alt: "Project 5",
     title: "OneForm – Embeddable Smart Form",
     desc: "A lightweight, customizable form module that can be embedded into any static or dynamic website, complete with admin panel.",
@@ -99,30 +100,25 @@ const PortfolioCard = ({ project, index }) => {
 
   const cardVariants = {
     hidden: {
-      y: 50,
       opacity: 0,
-      scale: 0.9,
+      y: 20,
     },
     visible: {
-      y: 0,
       opacity: 1,
-      scale: 1,
+      y: 0,
       transition: {
-        duration: 0.6,
-        delay: index * 0.1,
+        duration: 0.4,
         ease: "easeOut",
       },
     },
   };
 
   const imageVariants = {
-    hidden: { scale: 0.8, opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-      scale: 1,
       opacity: 1,
       transition: {
-        duration: 0.5,
-        delay: index * 0.1 + 0.2,
+        duration: 0.3,
         ease: "easeOut",
       },
     },
@@ -136,11 +132,9 @@ const PortfolioCard = ({ project, index }) => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       whileHover={{
-        y: -10,
-        scale: 1.02,
-        transition: { duration: 0.3 },
+        y: -5,
+        transition: { duration: 0.2 },
       }}
-      whileTap={{ scale: 0.98 }}
     >
       <motion.img
         src={project.img}
@@ -148,39 +142,34 @@ const PortfolioCard = ({ project, index }) => {
         className="portfolio-img"
         variants={imageVariants}
         whileHover={{
-          scale: 1.05,
-          transition: { duration: 0.3 },
+          scale: 1.02,
+          transition: { duration: 0.2 },
         }}
       />
       <div className="portfolio-card-content">
         <div className="portfolio-card-title">{project.title}</div>
         <div className="portfolio-card-desc">{project.desc}</div>
-        <div className="portfolio-card-features">Key Features</div>
+        {/* <div className="portfolio-card-features">Key Features</div>
         <ul className="portfolio-features-list">
-          {project.features.map((feature, i) => (
-            <motion.li
-              key={i}
-              initial={{ x: -20, opacity: 0 }}
-              animate={inView ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }}
-              transition={{ delay: index * 0.1 + 0.3 + i * 0.1, duration: 0.3 }}
-            >
+          {project.features.slice(0, 3).map((feature, i) => (
+            <li key={i}>
               <FaCheckCircle className="portfolio-feature-icon" /> {feature}
-            </motion.li>
+            </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
       <div className="portfolio-card-divider" />
-      <motion.button
-        className="portfolio-card-btn"
-        whileHover={{
-          scale: 1.05,
-          x: 5,
-          transition: { duration: 0.2 },
-        }}
-        whileTap={{ scale: 0.95 }}
-      >
-        Portfolio <FaArrowRight />
-      </motion.button>
+      <Link to="/works">
+        <motion.button
+          className="portfolio-card-btn"
+          whileHover={{
+            scale: 1.02,
+            transition: { duration: 0.2 },
+          }}
+        >
+          Portfolio <FaArrowRight />
+        </motion.button>
+      </Link>
     </motion.div>
   );
 };
@@ -200,27 +189,24 @@ const PortfolioSection = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.8,
-        staggerChildren: 0.1,
+        duration: 0.4,
       },
     },
   };
 
   const headerVariants = {
-    hidden: { y: -30, opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-      y: 0,
       opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
 
   const paginationVariants = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-      y: 0,
       opacity: 1,
-      transition: { duration: 0.5, delay: 0.5 },
+      transition: { duration: 0.3 },
     },
   };
 
@@ -234,11 +220,11 @@ const PortfolioSection = () => {
     >
       <motion.div className="portfolio-header-row" variants={headerVariants}>
         <div className="portfolio-header-left">
-          <motion.div
-            className="portfolio-badge"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
-          >
+                  <motion.div
+          className="portfolio-badge"
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.2 }}
+        >
             Portfolio
           </motion.div>
           <h2 className="portfolio-title">
@@ -251,11 +237,9 @@ const PortfolioSection = () => {
             className="portfolio-btn"
             href="#"
             whileHover={{
-              scale: 1.05,
-              x: 5,
+              scale: 1.02,
               transition: { duration: 0.2 },
             }}
-            whileTap={{ scale: 0.95 }}
           >
             Portfolio <FaArrowRight />
           </motion.a>
@@ -266,9 +250,9 @@ const PortfolioSection = () => {
         <motion.div
           key={page}
           className="portfolio-cards"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
           {visibleProjects.map((project, idx) => (
@@ -287,12 +271,13 @@ const PortfolioSection = () => {
             className={`dot${i === page ? " active" : ""}`}
             onClick={() => setPage(i)}
             style={{ cursor: "pointer" }}
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: i * 0.1 }}
-          />
+            whileHover={{ scale: 1.05 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: i * 0.05 }}
+          >
+            <span>{i + 1}</span>
+          </motion.span>
         ))}
       </motion.div>
     </motion.section>

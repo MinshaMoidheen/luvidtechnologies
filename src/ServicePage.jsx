@@ -71,7 +71,7 @@ const ServicePage = () => {
          <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
-          <Link to="/aboutus"><a href="#about">About</a></Link>
+          <Link to="/about"><a href="#about">About</a></Link>
           <Link to="/services"><a href="#services">Services</a></Link>
           <Link to='/works'><a>Products</a></Link>
           <Link to="/blog"><a href="#blogs">Blogs</a></Link>
@@ -97,7 +97,7 @@ const ServicePage = () => {
         </div>
         <nav className="mobile-nav">
                   <a href="/" onClick={closeMenu}>Home</a>
-                  <Link to="/aboutus" onClick={closeMenu}><a href="#about">About</a></Link>
+                  <Link to="/about" onClick={closeMenu}><a href="#about">About</a></Link>
                   <a href="/services" onClick={closeMenu}>Services</a>
                   <Link to='/works' onClick={closeMenu}><a>Products</a></Link>
                   <Link to="/blog" onClick={closeMenu}><a href="#blogs">Blogs</a></Link>

@@ -184,7 +184,7 @@ const AboutSection = () => {
           </motion.p>
 
           <motion.button
-            onClick={() => navigate("/aboutus")}
+            onClick={() => navigate("/about")}
             className="about-hero-btn"
             variants={buttonVariants}
             whileHover={{

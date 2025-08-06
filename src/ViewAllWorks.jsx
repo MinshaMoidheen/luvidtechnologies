@@ -115,8 +115,8 @@ const ViewAllWorks = () => {
     
     // {
     //   image: stockflow,
-    //   alt: "Stock Flow Product",
-    //   title: "Stock Flow – Warehouse Inventory Management System",
+    //   alt: "Stocksigo Product",
+    //   title: "Stocksigo – Warehouse Inventory Management System",
     //   desc: "A scalable solution for managing warehouse inventory across multiple stores. Features include real-time stock tracking, supplier management, invoice generation, and comprehensive financial reporting for medium to large-scale storage facilities.",
     //   link: "https://stockflow.com/"
     // }
@@ -134,7 +134,7 @@ const ViewAllWorks = () => {
         <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
-          <Link to="/aboutus"><a href="#about">About</a></Link>
+          <Link to="/about"><a href="#about">About</a></Link>
           <Link to="/services"><a href="#services">Services</a></Link>
           <Link to='/works'><a>Products</a></Link>
           <Link to="/blog"><a href="#blogs">Blogs</a></Link>
@@ -160,7 +160,7 @@ const ViewAllWorks = () => {
         </div>
        <nav className="mobile-nav">
                  <a href="/" onClick={closeMenu}>Home</a>
-                 <Link to="/aboutus" onClick={closeMenu}><a href="#about">About</a></Link>
+                 <Link to="/about" onClick={closeMenu}><a href="#about">About</a></Link>
                  <a href="/services" onClick={closeMenu}>Services</a>
                  <Link to='/works' onClick={closeMenu}><a>Products</a></Link>
                  <Link to="/blog" onClick={closeMenu}><a href="#blogs">Blogs</a></Link>
@@ -239,15 +239,19 @@ const ViewAllWorks = () => {
               </a>
             ))}
           </div>
-          
-          {/* Pagination */}
+        </div>
+      </section>
+
+      {/* Pagination Section */}
+      <section className="pagination-section">
+        <div className="pagination-container">
           <div className="pagination">
             <button 
               onClick={() => handlePageChange(currentPage - 1)} 
               disabled={currentPage === 1}
               className="pagination-btn"
             >
-              ←
+              <span>←</span>
             </button>
             {[...Array(totalPages)].map((_, i) => (
               <button
@@ -255,7 +259,7 @@ const ViewAllWorks = () => {
                 className={`pagination-btn ${currentPage === i + 1 ? 'active' : ''}`}
                 onClick={() => handlePageChange(i + 1)}
               >
-                {i + 1}
+                <span>{i + 1}</span>
               </button>
             ))}
             <button 
@@ -263,7 +267,7 @@ const ViewAllWorks = () => {
               disabled={currentPage === totalPages}
               className="pagination-btn"
             >
-              →
+              <span>→</span>
             </button>
           </div>
         </div>

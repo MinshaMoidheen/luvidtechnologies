@@ -24,7 +24,7 @@ const AboutUsPage = () => {
         <Link to='/'><img src={luvidlogo} alt="luvid-logo" /></Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
-          <Link to="/aboutus"><a href="#about">About</a></Link>
+          <Link to="/about"><a href="#about">About</a></Link>
           <Link to="/services"><a href="#services">Services</a></Link>
           <Link to='/works'><a>Products</a></Link>
           <Link to="/blog"><a href="#blogs">Blogs</a></Link>
@@ -50,7 +50,7 @@ const AboutUsPage = () => {
         </div>
         <nav className="mobile-nav">
                   <a href="/" onClick={closeMenu}>Home</a>
-                  <Link to="/aboutus" onClick={closeMenu}><a href="#about">About</a></Link>
+                  <Link to="/about" onClick={closeMenu}><a href="#about">About</a></Link>
                   <a href="/services" onClick={closeMenu}>Services</a>
                   <Link to='/works' onClick={closeMenu}><a>Products</a></Link>
                   <Link to="/blog" onClick={closeMenu}><a href="#blogs">Blogs</a></Link>
@@ -125,8 +125,8 @@ const AboutUsPage = () => {
         </div>
       </section>
 
-      {/* Our Leadership Section */}
-      <section className="about-leadership-section">
+      {/* Our Leadership Section - COMMENTED OUT */}
+      {/* <section className="about-leadership-section">
         <h2 className="about-leadership-title">Our Leadership</h2>
         <div className="about-leadership-row">
           <div className="about-leader-card">
@@ -175,11 +175,11 @@ const AboutUsPage = () => {
             <div className="about-leader-role">Co-founder & CEO</div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
-       {/* Awards & Recognition Section */}
-      <section className="about-awards-section">
+       {/* Awards & Recognition Section - COMMENTED OUT */}
+       {/* <section className="about-awards-section">
         <div className="about-awards-badge">Awards & Recognition</div>
         <h1 className="about-awards-title">Celebrating Excellence<br/>& Recognition</h1>
         <div className="about-award-card">
@@ -205,7 +205,7 @@ const AboutUsPage = () => {
             <div className="about-award-date">04 January 2025</div>
           </div>
         </div>
-      </section>
+      </section> */}
 
     <FooterSection/>
 

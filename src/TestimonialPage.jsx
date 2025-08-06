@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
 import FooterSection from "./FooterSection";
 import "./TestimonialPage.css";
 import luvidlogo from "./assets/LUVID-LOGO.png";
+import userLogo from "./assets/user-logo.svg";
 
 const TestimonialPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const ref = useRef(null);
+  const inView = useInView(ref, {
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,59 +22,76 @@ const TestimonialPage = () => {
     setIsMenuOpen(false);
   };
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const avatarVariants = {
+    hidden: { scale: 0, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechStart Inc.",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=150&h=150",
+      name: "Muhammed Ali Ambalathumkandi",
+      role: "Founder, Oto Gadgets",
       content:
-        "Luvid Technologies transformed our business with their innovative web solutions. Their team delivered exactly what we needed, on time and within budget. Highly recommended!",
+        "Luvid Technologies transformed our automotive e-commerce platform with their innovative development approach. The team delivered a seamless user experience that significantly increased our sales and customer satisfaction. Their attention to detail and commitment to quality exceeded our expectations.",
       rating: 5,
     },
     {
-      name: "Michael Chen",
-      role: "Founder, DigitalFlow",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150",
+      name: "Dr Abhilash",
+      role: "Founder, Pasunooti Hospitals",
       content:
-        "Working with Luvid was a game-changer for our startup. Their mobile app development expertise helped us scale rapidly and improve user engagement significantly.",
+        "The hospital management system developed by Luvid has streamlined our entire operations. Their attention to detail and understanding of healthcare workflows made the implementation smooth and efficient. The system has improved our patient care and operational efficiency significantly.",
       rating: 5,
     },
     {
-      name: "Emily Rodriguez",
-      role: "Marketing Director, GrowthCorp",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150",
+      name: "Nabeel",
+      role: "Founder, Stocksigo",
       content:
-        "The team at Luvid Technologies exceeded our expectations. Their attention to detail and commitment to quality is unmatched. Our new website has increased conversions by 40%.",
+        "Luvid's stock management solution has revolutionized how we handle inventory. The real-time tracking and automated alerts have saved us countless hours and reduced errors significantly. Their technical expertise and innovative approach made all the difference.",
       rating: 5,
     },
     {
-      name: "David Thompson",
-      role: "CTO, InnovateTech",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150",
+      name: "Hanna Ayyoob",
+      role: "Clinical Psychologist",
       content:
-        "Luvid's cloud migration services were exceptional. They seamlessly transitioned our entire infrastructure with zero downtime. Professional, reliable, and highly skilled.",
+        "Working with Luvid Technologies was exceptional. They created a professional platform that perfectly represents our clinical psychology practice and helps us connect with patients effectively. The user-friendly interface and secure patient portal exceeded our requirements.",
       rating: 5,
     },
     {
-      name: "Lisa Wang",
-      role: "Product Manager, FutureApps",
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150",
+      name: "Muhammed",
+      role: "Owner, Lakkidi Inn",
       content:
-        "The ERP solution developed by Luvid has streamlined our operations completely. Their understanding of business processes and technical expertise is outstanding.",
+        "Luvid delivered an outstanding e-commerce solution for our business. Their technical expertise and commitment to quality exceeded our expectations. The platform has helped us reach more customers and increase our bookings significantly. Highly recommended!",
       rating: 5,
     },
     {
-      name: "James Wilson",
-      role: "Operations Director, GlobalTech",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150",
+      name: "Althaf",
+      role: "Founder, HM Scraps",
       content:
-        "Luvid Technologies delivered a custom LMS that perfectly fits our training needs. Their innovative approach and dedication to client success is remarkable.",
+        "The team at Luvid Technologies built us a robust scrap management system that perfectly fits our business needs. Their innovative approach and dedication to client success is remarkable. The system has improved our operational efficiency and helped us scale our business.",
       rating: 5,
     },
   ];
@@ -81,7 +105,7 @@ const TestimonialPage = () => {
         </Link>
         <nav className="hero-nav">
           <a href="/">Home</a>
-          <Link to="/aboutus">
+          <Link to="/about">
             <a href="#about">About</a>
           </Link>
           <Link to="/services">
@@ -93,7 +117,7 @@ const TestimonialPage = () => {
           <Link to="/blog">
             <a href="#blogs">Blogs</a>
           </Link>
-          <a href="/testimonial">Testimonials</a>
+          <Link to="/testimonial">Testimonials</Link>
           {/* <a href="#careers">Careers</a> */}
         </nav>
         <Link to="/contact">
@@ -122,7 +146,7 @@ const TestimonialPage = () => {
           <a href="/" onClick={closeMenu}>
             Home
           </a>
-          <Link to="/aboutus" onClick={closeMenu}>
+          <Link to="/about" onClick={closeMenu}>
             <a href="#about">About</a>
           </Link>
           <a href="/services" onClick={closeMenu}>
@@ -134,9 +158,9 @@ const TestimonialPage = () => {
           <Link to="/blog" onClick={closeMenu}>
             <a href="#blogs">Blogs</a>
           </Link>
-          <a href="/testimonial" onClick={closeMenu}>
+          <Link to="/testimonial" onClick={closeMenu}>
             Testimonials
-          </a>
+          </Link>
           {/* <a href="#careers" onClick={closeMenu}>Careers</a> */}
         </nav>
         <div className="mobile-menu-footer">
@@ -160,18 +184,44 @@ const TestimonialPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="testimonials-section">
+      <motion.section
+        className="testimonials-section"
+        ref={ref}
+        variants={containerVariants}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+      >
         <div className="testimonials-container">
-          <div className="testimonials-grid">
+          <motion.div className="testimonials-grid" variants={containerVariants}>
             {testimonials.map((testimonial, index) => (
-              <div className="testimonial-card" key={index}>
+              <motion.div
+                className="testimonial-card"
+                key={index}
+                variants={cardVariants}
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.98 }}
+              >
                 <div className="testimonial-header">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
+                  <motion.img
+                    src={userLogo}
+                    alt="User"
                     className="testimonial-avatar"
+                    variants={avatarVariants}
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 5,
+                      transition: { duration: 0.2 },
+                    }}
                   />
-                  <div className="testimonial-info">
+                  <motion.div
+                    className="testimonial-info"
+                    initial={{ x: -20, opacity: 0 }}
+                    animate={inView ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }}
+                    transition={{ delay: index * 0.2 + 0.4, duration: 0.5 }}
+                  >
                     <h3 className="testimonial-name">{testimonial.name}</h3>
                     <p className="testimonial-role">{testimonial.role}</p>
                     <div className="testimonial-rating">
@@ -181,14 +231,21 @@ const TestimonialPage = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
-                <p className="testimonial-content">{testimonial.content}</p>
-              </div>
+                <motion.p
+                  className="testimonial-content"
+                  initial={{ opacity: 0 }}
+                  animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{ delay: index * 0.2 + 0.2, duration: 0.5 }}
+                >
+                  {testimonial.content}
+                </motion.p>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <FooterSection />
     </>
