@@ -67,7 +67,7 @@
 }
 
 .testimonial-hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -96,7 +96,6 @@
 .testimonial-badge-btn {
   background: rgba(255, 255, 255, 0.2);
   color: white;
- 
   padding: 8px 16px;
   border-radius: 10px;
   font-size: 0.9rem;
@@ -223,7 +222,7 @@
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 2px;
@@ -370,7 +369,7 @@
   .testimonial-hero-content {
     max-width: 700px;
   }
-  
+
   .testimonials-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -381,50 +380,50 @@
   .hero-nav {
     display: none;
   }
-  
+
   .contact-btn {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: block;
   }
-  
+
   .testimonial-hero {
     padding: 100px 0 60px 0;
   }
-  
+
   .testimonial-breadcrumb {
     top: 20px;
     left: 24px;
     font-size: 0.9rem;
   }
-  
+
   .testimonial-hero-content {
     padding: 0 24px;
     align-items: center;
     text-align: center;
   }
-  
+
   .testimonial-title {
     font-size: 2.5rem;
     text-align: center;
   }
-  
+
   .testimonial-desc {
     text-align: center;
     max-width: 100%;
   }
-  
+
   .testimonials-container {
     padding: 0 24px;
   }
-  
+
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
-  
+
   .testimonial-card {
     max-width: 100%;
   }
@@ -434,51 +433,51 @@
   .hero-header {
     padding: 12px 16px;
   }
-  
+
   .testimonial-hero {
     padding: 80px 0 40px 0;
   }
-  
+
   .testimonial-breadcrumb {
     top: 16px;
     left: 16px;
     font-size: 0.85rem;
     margin-top: 20px;
   }
-  
+
   .testimonial-hero-content {
     padding: 0 16px;
   }
-  
+
   .testimonial-title {
     font-size: 2rem;
   }
-  
+
   .testimonial-desc {
     font-size: 1rem;
   }
-  
+
   .testimonials-container {
     padding: 0 16px;
   }
-  
+
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .testimonial-card {
     padding: 24px 20px;
   }
-  
+
   .testimonial-name {
     font-size: 1.1rem;
   }
-  
+
   .testimonial-role {
     font-size: 0.85rem;
   }
-  
+
   .testimonial-content {
     font-size: 0.95rem;
   }
@@ -488,28 +487,28 @@
   .testimonial-title {
     font-size: 1.8rem;
   }
-  
+
   .testimonial-desc {
     font-size: 0.95rem;
   }
-  
+
   .testimonials-container {
     padding: 0 16px;
   }
-  
+
   .testimonial-card {
     padding: 20px 16px;
   }
-  
+
   .testimonial-name {
     font-size: 1rem;
   }
-  
+
   .testimonial-role {
     font-size: 0.8rem;
   }
-  
+
   .testimonial-content {
     font-size: 0.9rem;
   }
-} 
+}

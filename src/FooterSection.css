@@ -2,7 +2,7 @@
   background: #111;
   color: #fff;
   padding: 64px 0 0 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -12,9 +12,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 48px 48px 48px;
+  padding: 0 5% 48px 5%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -49,6 +49,17 @@
   align-items: center;
   gap: 8px;
   border: none;
+  outline: none;
+}
+
+.footer-btn:focus {
+  outline: none;
+  border: none;
+}
+
+.footer-btn:active {
+  outline: none;
+  border: none;
 }
 .footer-btn-white {
   background: #fff;
@@ -75,7 +86,7 @@
 .footer-divider {
   width: 90%;
   height: 1px;
-  background: rgba(255,255,255,0.13);
+  background: rgba(255, 255, 255, 0.13);
   margin-left: 5%;
   margin-top: 40px;
   margin-right: 5%;
@@ -86,9 +97,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 48px 48px 48px 48px;
+  padding: 48px 5% 48px 5%;
   gap: 32px;
   width: 100%;
   box-sizing: border-box;
@@ -100,22 +111,48 @@
   gap: 12px;
   min-width: 160px;
   box-sizing: border-box;
+  align-items: flex-start;
+  text-align: left;
 }
 .footer-col-title {
   font-size: 1.18rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff;
+  text-align: left;
+  align-self: flex-start;
 }
-.footer-col a {
+.footer-col a,
+.footer-link {
   color: #fff;
   text-decoration: none;
   font-size: 1.05rem;
   font-weight: 500;
   transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  text-align: left;
+  align-self: flex-start;
 }
-.footer-col a:hover {
+.footer-col a:hover,
+.footer-link:hover {
   color: #f2c744;
+}
+
+.footer-col a:focus,
+.footer-link:focus {
+  outline: none;
+  border: none;
+}
+
+.footer-col a:active,
+.footer-link:active {
+  outline: none;
+  border: none;
 }
 .footer-connect-row {
   font-size: 1.05rem;
@@ -123,6 +160,8 @@
   margin-bottom: 6px;
   display: flex;
   gap: 8px;
+  text-align: left;
+  align-self: flex-start;
 }
 
 .footer-bar {
@@ -168,25 +207,26 @@
   .footer-top,
   .footer-bottom,
   .footer-bar {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
 @media (max-width: 1000px) {
-  .footer-top, .footer-bottom {
+  .footer-top,
+  .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
-    padding: 0 24px 32px 24px;
+    padding: 0 5% 32px 5%;
   }
-  
+
   .footer-bottom {
-    padding: 32px 24px 32px 24px;
+    padding: 32px 5% 32px 5%;
   }
-  
+
   .footer-bar {
-    padding: 24px 24px 32px 24px;
+    padding: 24px 5% 32px 5%;
   }
 }
 
@@ -194,38 +234,38 @@
   .footer-root {
     padding: 48px 0 0 0;
   }
-  
+
   .footer-heading {
     font-size: 1.8rem;
   }
-  
+
   .footer-actions {
     gap: 12px;
   }
-  
+
   .footer-btn {
     padding: 14px 24px;
     font-size: 1rem;
   }
-  
+
   .footer-col {
     min-width: 0;
     width: 100%;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     gap: 24px;
-    padding: 24px 16px 24px 16px;
+    padding: 24px 5% 24px 5%;
   }
-  
+
   .footer-bar {
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
-    padding: 18px 16px 18px 16px;
+    padding: 18px 5% 18px 5%;
   }
-  
+
   .footer-socials {
     gap: 12px;
   }
@@ -235,55 +275,55 @@
   .footer-root {
     padding: 32px 0 0 0;
   }
-  
+
   .footer-top {
-    padding: 0 16px 24px 16px;
+    padding: 0 5% 24px 5%;
   }
-  
+
   .footer-heading {
     font-size: 1.5rem;
   }
-  
+
   .footer-actions {
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .footer-btn {
     width: 100%;
     justify-content: center;
     padding: 12px 20px;
     font-size: 0.95rem;
   }
-  
+
   .footer-bottom {
-    padding: 20px 12px 20px 12px;
+    padding: 20px 5% 20px 5%;
     gap: 20px;
   }
-  
+
   .footer-col-title {
     font-size: 1.1rem;
   }
-  
+
   .footer-col a {
     font-size: 0.95rem;
   }
-  
+
   .footer-connect-row {
     font-size: 0.95rem;
   }
-  
+
   .footer-bar {
     padding: 16px 12px 16px 12px;
   }
-  
+
   .footer-copyright {
     font-size: 0.9rem;
   }
-  
+
   .footer-social-icon {
     width: 32px;
     height: 32px;
     font-size: 1.1rem;
   }
-} 
+}
