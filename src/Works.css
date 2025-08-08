@@ -4,7 +4,7 @@
 }
 
 .about-breadcrumb {
-  margin-left: 50px;
+  margin-left: 48px;
   margin-bottom: 50px;
 }
 
@@ -68,6 +68,8 @@
   margin: 0 auto;
   gap: 40px;
   color: #111;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .portfolio-product-image img {
@@ -77,6 +79,7 @@
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   height: 410px;
   margin-top: 30px;
+  object-fit: cover;
 }
 
 .portfolio-product-details {
@@ -387,6 +390,9 @@
     align-items: center;
     gap: 24px;
     padding: 0 16px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .portfolio-product-image {
@@ -400,11 +406,13 @@
     max-width: 400px;
     height: auto;
     margin-top: 0;
+    min-height: 250px;
   }
 
   .portfolio-product-details {
     width: 100%;
     text-align: center;
+    padding: 0 10px;
   }
 
   .portfolio-product-details h2 {
@@ -431,5 +439,45 @@
   .portfolio-product-details li {
     font-size: 0.95rem;
     margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-breadcrumb {
+    margin-left: 15px;
+  }
+
+  .portfolio-product-container {
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .portfolio-product-image img {
+    max-width: 100%;
+    min-height: 200px;
+  }
+
+  .portfolio-product-details {
+    padding: 0 5px;
+  }
+
+  .portfolio-product-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-product-details p {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+
+  .portfolio-product-details h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-product-details li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
   }
 }
