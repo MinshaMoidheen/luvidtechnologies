@@ -10,10 +10,10 @@ import "swiper/css/effect-fade";
 import luvidlogo from "./assets/LUVID-LOGO.png";
 import teamImg from "./assets/team-img.png";
 import hrmsImg from "./assets/hrms-img.png";
-import ecomImg from "./assets/ecom-img.png";
+import ecomImg from "./assets/ecom-img.webp";
 import mobileappImg from "./assets/mobileapp-img.png";
 import wmsImg from "./assets/wms-img.png";
-import travelImg from "./assets/travel-img.png";
+import travelImg from "./assets/travel-img.webp";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
